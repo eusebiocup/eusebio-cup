@@ -1,0 +1,1207 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1º Eusébio Cup de Handebol · Inscrições abertas</title>
+<meta name="description" content="1º Eusébio Cup de Handebol, de 15 a 17 de janeiro de 2027 em Eusébio, Ceará. Inscrições abertas para equipes de jovens atletas de todo o Nordeste.">
+<meta property="og:title" content="1º Eusébio Cup de Handebol · Inscrições abertas">
+<meta property="og:description" content="15 a 17 de janeiro de 2027 · Eusébio – CE. Pré-mirim ao Júnior, masculino e feminino. Inscreva sua equipe!">
+<meta property="og:image" content="assets/cartaz-oficial.jpg">
+<meta name="theme-color" content="#071447">
+<script>/* se uma imagem não carregar (ex.: abriram só o index.html sem a pasta assets), esconde a caixa quebrada */
+document.addEventListener('error', e => { if (e.target.tagName === 'IMG') e.target.style.visibility = 'hidden'; }, true);</script>
+<link rel="icon" href="assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,800;0,900;1,800;1,900&family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#071447; --deep:#030b33; --royal:#1a4fe0; --royal2:#1240c4; --sky:#4aa3ff;
+  --gold:#ffc20e; --gold2:#ffd65a; --white:#fff; --ink:#06102e;
+  --paper:#f4f6fc; --line:#d9deee; --muted:#5b6690; --ok:#16a34a; --err:#d92d20;
+  --r:18px;
+  --F: 'Montserrat', 'Segoe UI', system-ui, sans-serif;
+  --B: 'Barlow Condensed', 'Avenir Next Condensed', 'Roboto Condensed', 'Arial Narrow', sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+section,header,footer,.ufs{max-width:100vw;overflow-x:clip}
+h1,h2,h3,p,b,span,label{overflow-wrap:break-word}
+body{margin:0;background:var(--deep);color:var(--white);font-family:var(--F);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.it{font-style:italic;font-weight:900;text-transform:uppercase;letter-spacing:-.01em}
+.gold{color:var(--gold)}
+.big{font-family:var(--B);font-style:italic;font-weight:900;text-transform:uppercase;line-height:.9}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.eyebrow::before{content:"";width:28px;height:3px;background:var(--gold);border-radius:3px}
+h2.sec{font-family:var(--F);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(30px,5vw,54px);line-height:1.02;margin:10px 0 14px;letter-spacing:-.02em}
+.lead{color:#c9d3f5;font-size:clamp(16px,1.6vw,19px);max-width:62ch;margin:0}
+section{position:relative}
+.pad{padding:clamp(64px,9vw,110px) 0}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;text-decoration:none;font:italic 900 16px var(--F);text-transform:uppercase;letter-spacing:.02em;padding:16px 26px;border-radius:14px;transition:transform .15s, box-shadow .15s, background .15s}
+.btn-gold{background:var(--gold);color:var(--navy);box-shadow:0 10px 0 -2px #b88600, 0 18px 40px rgba(255,194,14,.35)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 0 -2px #b88600, 0 24px 50px rgba(255,194,14,.45)}
+.btn-gold:active{transform:translateY(4px);box-shadow:0 4px 0 -2px #b88600}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:2px solid rgba(255,255,255,.35)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--royal2)}
+.btn-line{background:#fff;color:var(--navy);border:2px solid var(--line)}
+.btn-line:hover{border-color:var(--navy)}
+.btn:disabled{opacity:.55;cursor:not-allowed;transform:none}
+.pulse{animation:pulse 2.2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 10px 0 -2px #b88600,0 0 0 0 rgba(255,194,14,.6)}60%{box-shadow:0 10px 0 -2px #b88600,0 0 0 18px rgba(255,194,14,0)}}
+
+/* topo */
+.top{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .25s, box-shadow .25s}
+.top.solid{background:rgba(3,11,51,.92);backdrop-filter:blur(10px);box-shadow:0 6px 30px rgba(0,0,0,.35)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:70px}
+.top .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.top .brand img{height:50px;width:auto}
+.top .brand span{font:italic 900 14px var(--F);text-transform:uppercase;line-height:1.05}
+.top nav{display:flex;gap:22px;align-items:center}
+.top nav a.l{font-weight:700;font-size:14px;text-decoration:none;opacity:.85}
+.top nav a.l:hover{opacity:1;color:var(--gold)}
+.top .btn{padding:11px 18px;font-size:14px;box-shadow:0 6px 0 -2px #b88600;white-space:nowrap}
+.hero h1 .hb{white-space:nowrap;overflow-wrap:normal}
+.btn{text-align:center}
+@media (max-width:860px){.top nav a.l{display:none}.top .brand span{display:none}}
+
+/* hero */
+.hero{min-height:100svh;display:grid;place-items:center;overflow:hidden;padding:110px 0 70px;isolation:isolate}
+.hero video.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-3;filter:saturate(1.15)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:
+  radial-gradient(ellipse at 50% 40%, rgba(18,64,196,.55), rgba(10,37,128,.82) 50%, rgba(3,11,51,.97) 100%),
+  linear-gradient(180deg, rgba(3,11,51,.6), rgba(3,11,51,0) 30%, rgba(3,11,51,1) 100%)}
+.marq{position:absolute;left:0;width:100%;z-index:-1;white-space:nowrap;pointer-events:none;font-family:var(--B);font-weight:900;font-size:clamp(150px,26vw,380px);line-height:.8;color:transparent;-webkit-text-stroke:2px rgba(255,194,14,.22);user-select:none}
+.marq span{display:inline-block;animation:marq 40s linear infinite;padding-right:.3em}
+.marq.m1{top:9%}.marq.m2{top:52%}
+.marq.m2 span{animation-direction:reverse;-webkit-text-stroke:0;color:rgba(255,190,20,.10)}
+@keyframes marq{to{transform:translateX(-50%)}}
+.hero-in{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:40px;align-items:center}
+.hero-in > *{min-width:0}
+.hero h1{margin:14px 0 8px;font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(26px,3.4vw,44px);line-height:1.04;letter-spacing:-.01em}
+.hero h1 .hb{display:block;font-family:var(--B);font-size:clamp(84px,12vw,170px);line-height:.82;color:var(--gold);-webkit-text-stroke:3px var(--ink);paint-order:stroke fill;text-shadow:0 10px 30px rgba(0,0,0,.45);margin:4px 0 2px}
+.chip{display:inline-flex;align-items:center;justify-content:center;gap:8px;max-width:100%;text-align:center;line-height:1.2;background:#fff;color:var(--navy);font:italic 900 15px var(--F);text-transform:uppercase;padding:9px 16px;border-radius:999px;box-shadow:0 10px 26px rgba(0,0,0,.3)}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px 22px;margin:22px 0 28px;font-weight:800}
+.hero .meta div{display:flex;align-items:center;gap:10px;font-size:clamp(15px,1.6vw,18px)}
+.hero .meta svg{flex:none;color:var(--gold)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px}
+.hero .logo-big{width:min(520px,100%);height:auto;margin-inline:auto;filter:drop-shadow(0 30px 50px rgba(0,0,20,.6));animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-12px) rotate(-1deg)}}
+.lote-card{margin:22px auto 0;width:min(460px,100%);background:rgba(6,20,80,.78);border:2px solid var(--gold);border-radius:var(--r);padding:16px 18px;backdrop-filter:blur(6px);box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.lote-card .lt{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.lote-card .tag{background:var(--gold);color:var(--navy);font:italic 900 13px var(--F);padding:5px 10px;border-radius:8px;text-transform:uppercase}
+.lote-card .price{font:italic 900 30px var(--B);color:#fff}
+.lote-card .price small{font:700 13px var(--F);color:#c9d3f5;margin-left:4px}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+.cd div{min-width:0;background:rgba(255,255,255,.08);border-radius:12px;padding:8px 4px;text-align:center}
+.cd b{display:block;font:900 30px var(--B);color:var(--gold);line-height:1}
+.cd span{font-size:11px;font-weight:700;text-transform:uppercase;color:#c9d3f5;letter-spacing:.06em}
+.lote-card p{margin:10px 0 0;font-size:13px;color:#c9d3f5;font-weight:600}
+@media (max-width:900px){.hero .hl{margin-inline:auto}.hero-in{grid-template-columns:minmax(0,1fr);text-align:center}.hero h1 .hb{font-size:min(23vw,120px);-webkit-text-stroke:2px var(--ink)}.hero h1{font-size:min(7.2vw,34px)}.chip{font-size:min(3.8vw,15px)}.hero .meta{flex-direction:column;align-items:center;gap:8px}.hero .meta,.hero .ctas{justify-content:center}.hero .logo-big{width:min(230px,62%);order:-1}.hero .vis{display:contents}.hero-in{gap:18px}.lote-card{order:2;margin-top:4px}.hero{padding-top:86px}}
+
+/* faixa estados */
+.ufs{background:var(--gold);color:var(--navy);overflow:hidden;transform:skewY(-2deg);margin:-30px 0 0;position:relative;z-index:3;box-shadow:0 20px 40px rgba(0,0,0,.35)}
+.ufs .row{display:flex;white-space:nowrap;padding:16px 0;transform:skewY(2deg)}
+.ufs .row span{display:inline-flex;align-items:center;gap:22px;animation:marq 32s linear infinite;font:italic 900 clamp(20px,2.6vw,30px) var(--F);text-transform:uppercase;padding-right:22px}
+.ufs .row i{font-style:normal;display:inline-block;width:12px;height:12px;background:var(--navy);transform:rotate(45deg)}
+
+/* chamada nordeste */
+.call{background:radial-gradient(ellipse at 20% 0%, #0d2a8f 0%, var(--deep) 60%)}
+.call-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
+.stat{background:linear-gradient(160deg,rgba(26,79,224,.35),rgba(6,20,80,.6));border:1px solid rgba(74,163,255,.35);border-radius:var(--r);padding:18px}
+.stat b{display:block;font:italic 900 clamp(40px,5vw,56px)/1 var(--B);color:var(--gold)}
+.stat span{font-weight:700;font-size:14px;color:#dbe3ff}
+.map{position:relative;border-radius:28px;overflow:hidden;border:4px solid var(--gold);box-shadow:0 30px 70px rgba(0,0,0,.5);aspect-ratio:4/5;background:#000}
+.map video{width:100%;height:100%;object-fit:cover}
+.map .ov{position:absolute;inset:auto 0 0 0;padding:70px 22px 22px;background:linear-gradient(transparent,rgba(3,11,51,.95))}
+.map .ov b{font:italic 900 26px var(--F);text-transform:uppercase;display:block;line-height:1.05}
+.map .ov span{color:var(--gold);font-weight:800}
+@media (max-width:900px){.call-grid{grid-template-columns:1fr}.map{aspect-ratio:16/11}}
+
+/* categorias */
+.cats{background:var(--navy);overflow:hidden}
+.cats::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.025) 0 2px,transparent 2px 26px)}
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px;position:relative}
+.cat{position:relative;background:linear-gradient(150deg,#1a4fe0,#0a2580);border-radius:22px;padding:22px 22px 20px;overflow:hidden;border:2px solid rgba(255,255,255,.12);transition:transform .2s,border-color .2s}
+.cat:hover{transform:translateY(-4px) rotate(-.4deg);border-color:var(--gold)}
+.cat .n{position:absolute;right:-6px;bottom:-26px;font:italic 900 130px/1 var(--B);color:rgba(255,194,14,.13)}
+.cat h3{margin:0;font:italic 900 clamp(26px,3vw,34px)/1 var(--F);text-transform:uppercase}
+.cat .age{display:inline-block;margin-top:10px;background:var(--gold);color:var(--navy);font:italic 900 14px var(--F);text-transform:uppercase;padding:5px 11px;border-radius:8px}
+.cat .nx{margin-top:14px;display:flex;gap:8px;font-weight:700;font-size:13px;color:#dbe3ff}
+.cat .nx span{border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:3px 10px}
+.naipe{display:flex;justify-content:center;margin-top:28px}
+.naipe .chip{font-size:clamp(16px,2vw,22px);padding:12px 26px;background:var(--gold)}
+@media (max-width:860px){.cat-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.cat-grid{grid-template-columns:1fr}}
+
+/* lotes */
+.lotes{background:linear-gradient(180deg,var(--navy),var(--deep))}
+.lote-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}
+.lote{position:relative;border-radius:26px;padding:28px;background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.15);overflow:hidden}
+.lote.on{background:linear-gradient(150deg,#ffd447,#ffc20e 50%,#f0a800);color:var(--navy);border-color:#fff;box-shadow:0 30px 70px rgba(255,194,14,.25);transform:scale(1.02)}
+.lote.off{opacity:.55}
+.lote .lt{font:italic 900 18px var(--F);text-transform:uppercase;letter-spacing:.04em}
+.lote .badge{position:absolute;top:22px;right:22px;font:italic 900 12px var(--F);text-transform:uppercase;padding:6px 10px;border-radius:8px;background:var(--navy);color:var(--gold)}
+.lote .badge.x{background:rgba(255,255,255,.15);color:#fff}
+.lote .val{font:italic 900 clamp(64px,9vw,104px)/.9 var(--B);margin:14px 0 4px}
+.lote .val sup{font-size:.38em;vertical-align:.95em;margin-right:4px}
+.lote .per{font-weight:800;font-size:15px}
+.lote .until{margin-top:16px;display:flex;align-items:center;gap:10px;font-weight:800;font-size:16px;padding-top:16px;border-top:2px dashed currentColor}
+.lote.on .until{border-color:rgba(7,20,71,.35)}
+.lote:not(.on) .until{border-color:rgba(255,255,255,.2)}
+.dates{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.date{display:flex;gap:14px;align-items:center;background:rgba(26,79,224,.22);border:1px solid rgba(74,163,255,.35);border-radius:var(--r);padding:16px}
+.date .ic{flex:none;width:52px;height:52px;border-radius:14px;background:var(--gold);color:var(--navy);display:grid;place-items:center}
+.date b{display:block;font:italic 900 17px var(--F);text-transform:uppercase;line-height:1.1}
+.date span{font-size:14px;color:#c9d3f5;font-weight:600}
+@media (max-width:860px){.lote-grid,.dates{grid-template-columns:1fr}.lote.on{transform:none}}
+
+/* experiência */
+.exp{background:var(--deep)}
+.icons{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:34px 0 30px}
+.icons div{text-align:center;padding:18px 10px;border-radius:var(--r);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.icons .em{width:76px;height:76px;margin:0 auto 10px;border-radius:50%;display:grid;place-items:center;font-size:36px;background:rgba(255,255,255,.1);border:4px solid var(--gold)}
+.icons b{font:italic 900 16px var(--F);text-transform:uppercase}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px}
+.ph{position:relative;border-radius:22px;overflow:hidden;border:3px solid var(--gold);background:#0a1a55}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.ph:hover img{transform:scale(1.06)}
+.ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(4,14,60,.95))}
+.ph .cap{position:absolute;left:16px;right:16px;bottom:14px;z-index:1}
+.ph .cap b{display:block;font:italic 900 20px/1.05 var(--F);text-transform:uppercase}
+.ph .cap span{font-size:13px;color:var(--gold);font-weight:700}
+.ph .cr{position:absolute;top:10px;right:12px;z-index:1;font-size:10px;color:rgba(255,255,255,.8);font-weight:600}
+.ph.w2{grid-column:span 2}.ph.h2{grid-row:span 2}
+@media (max-width:860px){.icons{grid-template-columns:repeat(2,1fr)}.gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}}
+@media (max-width:640px){
+  .gal{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:-16px;padding:4px 16px 14px;scroll-padding-inline:16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .gal::-webkit-scrollbar{display:none}
+  .ph,.ph.w2,.ph.h2{flex:0 0 82%;aspect-ratio:4/5;scroll-snap-align:start;grid-column:auto;grid-row:auto}
+  .ph .cap b{font-size:22px}
+  .ph img{object-position:var(--pos,center)}
+  .ph:hover img{transform:none}
+  .gal-hint{display:flex}
+}
+.gal-hint{display:none;align-items:center;justify-content:center;gap:8px;margin-top:6px;font-size:13px;font-weight:700;color:#c9d3f5}
+.gal-dots{display:flex;gap:6px}
+.gal-dots i{width:8px;height:8px;border-radius:8px;background:rgba(255,255,255,.35);transition:all .2s}
+.gal-dots i.on{width:24px;background:var(--gold)}
+@media (max-width:640px){.gal-hint{display:flex}}
+
+/* por que */
+.why{background:radial-gradient(ellipse at 80% 20%, #1240c4, var(--navy) 55%, var(--deep))}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:34px}
+.wc{display:flex;gap:18px;align-items:center;background:rgba(6,20,80,.7);border:2px solid var(--gold);border-radius:24px;padding:20px}
+.wc .em{flex:none;width:70px;height:70px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-size:32px}
+.wc b{display:block;font:italic 900 clamp(17px,2vw,21px)/1.1 var(--F);text-transform:uppercase}
+.wc b em{font-style:inherit;color:var(--gold)}
+.wc span{display:block;margin-top:6px;font-size:13px;color:#c9d3f5;font-weight:600}
+@media (max-width:760px){.why-grid{grid-template-columns:1fr}}
+
+/* como funciona */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px;counter-reset:s}
+.st{position:relative;background:#fff;color:var(--navy);border-radius:22px;padding:24px 20px 20px}
+.st::before{counter-increment:s;content:counter(s);position:absolute;top:-18px;left:20px;width:46px;height:46px;border-radius:14px;background:var(--gold);display:grid;place-items:center;font:italic 900 26px var(--B);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.st b{display:block;margin-top:14px;font:italic 900 18px/1.1 var(--F);text-transform:uppercase}
+.st p{margin:8px 0 0;font-size:14px;color:var(--muted);font-weight:600}
+@media (max-width:900px){.steps{grid-template-columns:repeat(2,1fr);row-gap:34px}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* ===== formulário ===== */
+.insc{background:linear-gradient(180deg,var(--deep) 0,var(--navy) 240px,var(--navy))}
+.panel{scroll-margin-top:86px;background:var(--paper);color:var(--ink);border-radius:30px;margin-top:36px;box-shadow:0 40px 90px rgba(0,0,0,.45);overflow:hidden}
+.prog{display:grid;grid-template-columns:repeat(3,1fr);background:var(--navy);border-bottom:4px solid var(--gold)}
+.prog div{display:flex;align-items:center;gap:12px;padding:18px 20px;color:#8f9bcc;font:italic 900 15px var(--F);text-transform:uppercase;line-height:1.1}
+.prog div i{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font:italic 900 18px var(--B);border:2px solid #3b4a85;font-style:normal}
+.prog div.on{color:#fff;background:rgba(255,255,255,.06)}
+.prog div.on i{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.prog div.done{color:#dbe3ff}
+.prog div.done i{background:var(--ok);border-color:var(--ok);color:#fff}
+@media (max-width:640px){.prog div{flex-direction:column;text-align:center;font-size:11px;padding:12px 6px;gap:6px}}
+.step{display:none;padding:clamp(20px,4vw,44px)}
+.step.on{display:block;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.fs{border:0;padding:0;margin:0 0 30px}
+.fs legend{display:flex;align-items:center;gap:10px;padding:0;margin-bottom:16px;font:italic 900 clamp(19px,2.2vw,24px) var(--F);text-transform:uppercase;color:var(--navy)}
+.fs legend::before{content:"";width:8px;height:26px;background:var(--gold);border-radius:4px;transform:skewX(-14deg)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px 16px}
+.c12{grid-column:span 12}.c8{grid-column:span 8}.c6{grid-column:span 6}.c4{grid-column:span 4}.c3{grid-column:span 3}
+@media (max-width:760px){.c8,.c6,.c4{grid-column:span 12}.c3{grid-column:span 6}}
+.f label{display:block;font-weight:700;font-size:14px;margin-bottom:6px;color:var(--ink)}
+.f label .req{color:var(--err)}
+.f input,.f select,.f textarea{width:100%;font:600 16px var(--F);color:var(--ink);background:#fff;border:2px solid var(--line);border-radius:14px;padding:13px 16px;outline:none;transition:border-color .15s, box-shadow .15s}
+.f textarea{min-height:110px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{border-color:var(--royal);box-shadow:0 0 0 4px rgba(26,79,224,.15)}
+.f input::placeholder,.f textarea::placeholder{color:#9aa3c4;font-weight:500}
+.f.bad input,.f.bad select,.f.bad textarea{border-color:var(--err);background:#fff6f5}
+.f .msg{display:none;color:var(--err);font-size:13px;font-weight:700;margin-top:5px}
+.f.bad .msg{display:block}
+.f .hint{font-size:12.5px;color:var(--muted);font-weight:600;margin-top:5px}
+.checks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media (max-width:760px){.checks{grid-template-columns:1fr 1fr}}
+@media (max-width:440px){.checks{grid-template-columns:1fr}}
+.ck{position:relative}
+.ck input{position:absolute;opacity:0;pointer-events:none}
+.ck label{display:flex;align-items:center;gap:12px;cursor:pointer;background:#fff;border:2px solid var(--line);border-radius:14px;padding:12px 14px;font-weight:700;font-size:14px;transition:all .15s;user-select:none;line-height:1.2}
+.ck label small{display:block;font-weight:600;color:var(--muted);font-size:12px}
+.ck label::before{content:"";flex:none;width:22px;height:22px;border-radius:7px;border:2px solid #b7c0dd;background:#fff;transition:all .15s}
+.ck input:checked + label{border-color:var(--navy);background:#eef2ff}
+.ck input:checked + label::before{background:var(--navy) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffc20e' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/16px no-repeat;border-color:var(--navy)}
+.ck input:focus-visible + label{box-shadow:0 0 0 4px rgba(26,79,224,.2)}
+.grpbad .ck label{border-color:#f3b7b1}
+.pay{display:grid;grid-template-columns:1fr 1.1fr;gap:18px;align-items:stretch}
+@media (max-width:820px){.pay{grid-template-columns:1fr}}
+.sum{background:var(--navy);color:#fff;border-radius:22px;padding:22px;position:relative;overflow:hidden}
+.sum::after{content:"R$";position:absolute;right:-10px;bottom:-40px;font:italic 900 170px/1 var(--B);color:rgba(255,194,14,.08)}
+.sum .row{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.18);font-weight:700;font-size:15px}
+.sum .row span:first-child{color:#c9d3f5}
+.sum .tot{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:4px 10px;margin-top:14px;position:relative;z-index:1}
+.sum .tot b{white-space:nowrap}
+.sum .tot b{font:italic 900 46px/1 var(--B);color:var(--gold)}
+.sum .tot span{font:italic 900 15px var(--F);text-transform:uppercase}
+.pix{background:#fff;border:2px dashed var(--royal);border-radius:22px;padding:22px}
+.pix .h{display:flex;align-items:center;gap:10px;font:italic 900 18px var(--F);text-transform:uppercase;color:var(--navy)}
+.pix .h svg{color:#32bcad}
+.pix .key{display:flex;gap:10px;align-items:center;margin:14px 0 10px;background:var(--paper);border-radius:14px;padding:10px 10px 10px 16px;flex-wrap:wrap}
+.pix .key code{flex:1;min-width:180px;font:800 clamp(18px,2.4vw,24px) var(--F);color:var(--navy);letter-spacing:.02em}
+.pix .key .btn{padding:11px 16px;font-size:13px}
+.pix dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:0;font-size:14px}
+.pix dt{color:var(--muted);font-weight:700}
+.pix dd{margin:0;font-weight:800}
+.alert{display:flex;gap:12px;align-items:flex-start;border-radius:16px;padding:14px 16px;font-weight:700;font-size:14px;margin:16px 0}
+.alert svg{flex:none;margin-top:1px}
+.alert.warn{background:#fff7db;border:2px solid var(--gold);color:#6b4d00}
+.alert.info{background:#eaf1ff;border:2px solid #b9cdfc;color:#1b3a8a}
+.alert.err{background:#fff0ee;border:2px solid #f3b7b1;color:#9b1c10}
+.alert.ok{background:#e9f9ef;border:2px solid #a6e3bb;color:#0f6b33}
+.drop{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;border:3px dashed #b7c0dd;border-radius:20px;padding:26px 18px;background:#fff;cursor:pointer;transition:all .15s}
+.drop:hover,.drop.over{border-color:var(--royal);background:#f3f6ff}
+.drop input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.drop b{font:italic 900 17px var(--F);text-transform:uppercase;color:var(--navy)}
+.drop span{font-size:13px;color:var(--muted);font-weight:600}
+.drop.has{border-style:solid;border-color:var(--ok);background:#f2fbf5}
+.drop .ic{width:52px;height:52px;border-radius:14px;background:var(--navy);color:var(--gold);display:grid;place-items:center}
+.drop.has .ic{background:var(--ok);color:#fff}
+.f.bad .drop{border-color:var(--err);background:#fff6f5}
+.actions{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;padding-top:22px;border-top:2px solid var(--line)}
+.actions .sp{flex:1}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tab{border:2px solid var(--line);background:#fff;color:var(--navy);font:italic 900 14px var(--F);text-transform:uppercase;padding:10px 14px;border-radius:12px;cursor:pointer;display:flex;align-items:center;gap:8px}
+.tab .cnt{background:var(--paper);border-radius:7px;padding:1px 7px;font-style:normal;font-size:12px}
+.tab.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.tab.on .cnt{background:var(--gold);color:var(--navy)}
+.tab.okk::after{content:"✓";color:var(--ok);font-style:normal}
+.tab.on.okk::after{color:#7ee2a2}
+.ficha{display:none;background:#fff;border:2px solid var(--line);border-radius:22px;padding:clamp(16px,3vw,26px)}
+.ficha.on{display:block}
+.ficha .fh{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.ficha .fh h3{margin:0;font:italic 900 22px var(--F);text-transform:uppercase;color:var(--navy)}
+.ficha .fh .sub{font-size:13px;color:var(--muted);font-weight:700}
+.tbl{width:100%;border-collapse:separate;border-spacing:0 8px}
+.tbl th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:800;padding:0 6px}
+.tbl td{padding:0 4px;vertical-align:top}
+.tbl td.n{width:42px;font:italic 900 20px var(--B);color:var(--navy);text-align:center;padding-top:10px}
+.tbl input{width:100%;font:600 15px var(--F);color:var(--ink);background:var(--paper);border:2px solid transparent;border-radius:12px;padding:10px 12px;outline:none}
+.tbl input:focus{border-color:var(--royal);background:#fff}
+.tbl input.bad{border-color:var(--err);background:#fff6f5}
+.tbl .warnage{font-size:11.5px;color:#a15c00;font-weight:700;margin-top:3px}
+.tbl td.x{width:40px}
+.tbl td.x button{width:36px;height:40px;border:0;border-radius:10px;background:transparent;color:#9aa3c4;cursor:pointer;font-size:20px}
+.tbl td.x button:hover{background:#fff0ee;color:var(--err)}
+@media (max-width:700px){
+  .tbl thead{display:none}
+  .tbl tr{display:grid;grid-template-columns:34px 1fr 1fr 36px;gap:6px;background:var(--paper);border-radius:14px;padding:8px;margin-bottom:8px}
+  .tbl td{padding:0}
+  .tbl td.n{grid-row:span 2;padding-top:8px}
+  .tbl td.nome{grid-column:2 / 4}
+  .tbl td.x{grid-row:1;grid-column:4}
+  .tbl input{background:#fff}
+  .tbl{border-spacing:0}
+}
+.dirig{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px}
+.dirig .f label{font-size:13px}
+@media (max-width:700px){.dirig{grid-template-columns:1fr}}
+.done-box{text-align:center;padding:20px 0 6px}
+.done-box .ok{width:96px;height:96px;margin:0 auto 18px;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center;box-shadow:0 0 0 12px rgba(22,163,74,.15)}
+.done-box h3{margin:0;font:italic 900 clamp(26px,4vw,40px)/1.05 var(--F);text-transform:uppercase;color:var(--navy)}
+.done-box .proto{display:inline-block;margin:16px 0;background:var(--navy);color:var(--gold);font:italic 900 26px var(--B);padding:10px 20px;border-radius:12px;letter-spacing:.06em}
+.done-box p{color:var(--muted);font-weight:600;max-width:58ch;margin:0 auto 10px}
+.done-list{text-align:left;max-width:620px;margin:22px auto;display:grid;gap:10px}
+.done-list div{display:flex;gap:12px;align-items:flex-start;background:#fff;border:2px solid var(--line);border-radius:14px;padding:12px 14px;font-weight:700;font-size:14px}
+.done-list div span{flex:none;width:28px;height:28px;border-radius:8px;background:var(--gold);color:var(--navy);display:grid;place-items:center;font:italic 900 15px var(--B)}
+.closed{text-align:center;padding:40px 20px}
+.spin{width:20px;height:20px;border:3px solid rgba(7,20,71,.25);border-top-color:var(--navy);border-radius:50%;animation:sp 0.8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+
+/* faq */
+.faq{background:var(--navy)}
+.faq-list{display:grid;gap:12px;margin-top:30px;max-width:900px}
+.faq details{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:0 20px}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0;font:italic 900 17px var(--F);text-transform:uppercase}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:900 28px var(--B);color:var(--gold);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0 0 18px;color:#c9d3f5;font-weight:600}
+
+/* rodapé */
+.cta-final{background:var(--gold);color:var(--navy);text-align:center;overflow:hidden}
+.cta-final .big{font-size:clamp(56px,10vw,130px);color:var(--navy)}
+.cta-final p{font:italic 900 clamp(18px,2.4vw,26px) var(--F);text-transform:uppercase;margin:6px 0 26px}
+.cta-final .btn-navy{font-size:18px;padding:18px 30px;box-shadow:0 10px 0 -2px #000c3a}
+footer{background:var(--deep);padding:50px 0 100px;text-align:center}
+footer .apoio{width:min(540px,100%);margin:14px auto 22px;border-radius:22px}
+footer p{color:#8f9bcc;font-size:13px;font-weight:600;margin:6px 0}
+.wa{position:fixed;right:18px;bottom:18px;z-index:60;width:62px;height:62px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.4);transition:transform .15s}
+.wa:hover{transform:scale(1.08)}
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,140%);background:var(--navy);color:#fff;border:2px solid var(--gold);font-weight:800;padding:12px 20px;border-radius:14px;z-index:70;transition:transform .3s;max-width:calc(100% - 32px);text-align:center}
+.toast.on{transform:translate(-50%,0)}
+
+/* revelar ao rolar */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease, transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><img src="assets/logo.webp" alt="1º Eusébio Cup de Handebol"><span>1º Eusébio Cup<br><span class="gold" style="display:inline">de Handebol</span></span></a>
+    <nav>
+      <a class="l" href="#categorias">Categorias</a>
+      <a class="l" href="#valores">Valores</a>
+      <a class="l" href="#experiencia">A cidade</a>
+      <a class="l" href="#duvidas">Dúvidas</a>
+      <a class="btn btn-gold" href="#inscricao">Inscreva-se</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <video class="bg" src="assets/jogada.mp4" autoplay muted loop playsinline preload="auto" poster="assets/eusebio.webp"></video>
+  <div class="marq m1" aria-hidden="true"><span>HANDEBOL HANDEBOL HANDEBOL HANDEBOL&nbsp;</span><span>HANDEBOL HANDEBOL HANDEBOL HANDEBOL&nbsp;</span></div>
+  <div class="marq m2" aria-hidden="true"><span>HANDEBOL HANDEBOL HANDEBOL HANDEBOL&nbsp;</span><span>HANDEBOL HANDEBOL HANDEBOL HANDEBOL&nbsp;</span></div>
+  <div class="wrap hero-in">
+    <div>
+      <span class="chip">🏅 Chamada para jovens atletas</span>
+      <h1>Atenção, times de <span class="hb">Handebol</span> do Nordeste!</h1>
+      <p class="lead hl">Três dias de muito handebol, da base ao Júnior, na cidade vizinha a Fortaleza. Traga sua equipe para o <b class="gold">1º Eusébio Cup</b>!</p>
+      <div class="meta">
+        <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>15 a 17 de janeiro de 2027</div>
+        <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Eusébio — Ceará</div>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-gold pulse" href="#inscricao">Inscrever minha equipe
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#categorias">Ver categorias</a>
+      </div>
+    </div>
+    <div class="vis">
+      <img class="logo-big" src="assets/logo.webp" alt="Logo do 1º Eusébio Cup de Handebol" width="520" height="520">
+      <div class="lote-card" id="loteCard">
+        <div class="lt"><span class="tag" id="lcTag">1º lote</span><span class="price" id="lcPrice">R$ 65<small>por atleta</small></span></div>
+        <div class="cd" id="cd"><div><b id="cdD">00</b><span>dias</span></div><div><b id="cdH">00</b><span>horas</span></div><div><b id="cdM">00</b><span>min</span></div><div><b id="cdS">00</b><span>seg</span></div></div>
+        <p id="lcTxt">para o fim do 1º lote (15/12/2026)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ufs" aria-label="Estados do Nordeste convidados">
+  <div class="row"><span>Alagoas <i></i> Bahia <i></i> Ceará <i></i> Maranhão <i></i> Paraíba <i></i> Pernambuco <i></i> Piauí <i></i> Rio Grande do Norte <i></i> Sergipe <i></i></span><span aria-hidden="true">Alagoas <i></i> Bahia <i></i> Ceará <i></i> Maranhão <i></i> Paraíba <i></i> Pernambuco <i></i> Piauí <i></i> Rio Grande do Norte <i></i> Sergipe <i></i></span></div>
+</div>
+
+<!-- CHAMADA -->
+<section class="call pad">
+  <div class="wrap call-grid">
+    <div class="rv">
+      <span class="eyebrow">Esporte que une, forma e inspira</span>
+      <h2 class="sec">O Nordeste inteiro<br>em <span class="gold">uma só quadra</span></h2>
+      <p class="lead">O 1º Eusébio Cup reúne equipes de jovens atletas dos nove estados do Nordeste para três dias de jogos, troca de experiências e muita festa. Base forte se constrói jogando — e o lugar é aqui.</p>
+      <div class="stats">
+        <div class="stat"><b>3</b><span>dias de competição</span></div>
+        <div class="stat"><b>6</b><span>categorias, do Pré-mirim ao Júnior</span></div>
+        <div class="stat"><b>12</b><span>disputas no masculino e no feminino</span></div>
+        <div class="stat"><b>9</b><span>estados do Nordeste convidados</span></div>
+      </div>
+    </div>
+    <div class="map rv">
+      <video src="assets/cadete-feminino.mp4" autoplay muted loop playsinline preload="metadata"></video>
+      <div class="ov"><b>Clima de final em cada jogo</b><span>Traga sua equipe! 🤾</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIAS -->
+<section class="cats pad" id="categorias">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Categorias</span>
+      <h2 class="sec">Tem lugar para<br><span class="gold">toda a sua base</span></h2>
+      <p class="lead">Seis categorias, todas disputadas no masculino e no feminino. A idade considera o ano de 2027.</p>
+    </div>
+    <div class="cat-grid" id="catGrid"></div>
+    <div class="naipe rv"><span class="chip">♂ Masculino e feminino ♀</span></div>
+  </div>
+</section>
+
+<!-- VALORES -->
+<section class="lotes pad" id="valores">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Valores e prazos</span>
+      <h2 class="sec">Garanta o <span class="gold">melhor preço</span></h2>
+      <p class="lead">O valor é cobrado por atleta inscrito. Quanto antes a equipe se inscrever, menos paga.</p>
+    </div>
+    <div class="lote-grid">
+      <div class="lote rv" id="lote1">
+        <span class="badge" id="b1">Lote atual</span>
+        <div class="lt">1º lote</div>
+        <div class="val"><sup>R$</sup>65,00</div>
+        <div class="per">por atleta</div>
+        <div class="until"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Inscrições até 15/12/2026</div>
+      </div>
+      <div class="lote rv" id="lote2">
+        <span class="badge x" id="b2">Em breve</span>
+        <div class="lt">2º lote</div>
+        <div class="val"><sup>R$</sup>80,00</div>
+        <div class="per">por atleta</div>
+        <div class="until"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Inscrições até 07/01/2027</div>
+      </div>
+    </div>
+    <div class="dates">
+      <div class="date rv"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h9"/></svg></div><div><b>Inscrições até 7/jan</b><span>Último dia: 07 de janeiro de 2027</span></div></div>
+      <div class="date rv"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3"/></svg></div><div><b>Congresso técnico</b><span>08 de janeiro de 2027, às 19h, pelo Google Meet</span></div></div>
+      <div class="date rv"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 9.6l-5.5 4.8L18.2 22 12 18.2 5.8 22l1.7-7.6L2 9.6l7.1-.7z"/></svg></div><div><b>Competição</b><span>15 a 17 de janeiro de 2027 em Eusébio – CE</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIÊNCIA -->
+<section class="exp pad" id="experiencia">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Mais que jogos</span>
+      <h2 class="sec">Uma experiência<br><span class="gold">completa!</span></h2>
+      <p class="lead">A poucos minutos de Fortaleza: chegar, jogar e curtir. Entre um jogo e outro, sua delegação conhece o melhor do Ceará.</p>
+    </div>
+    <div class="icons">
+      <div class="rv"><div class="em">🤾</div><b>Jogos</b></div>
+      <div class="rv"><div class="em">🎨</div><b>Feirinha</b></div>
+      <div class="rv"><div class="em">🍤</div><b>Sabores</b></div>
+      <div class="rv"><div class="em">🌴</div><b>Turismo</b></div>
+    </div>
+    <div class="gal">
+      <div class="ph w2 h2 rv"><img src="assets/eusebio.webp" alt="Vista aérea da cidade de Eusébio" loading="lazy"><div class="cap"><b>Eusébio, cidade que acolhe</b><span>Perto das praias, do Beach Park e de Fortaleza</span></div></div>
+      <div class="ph rv"><img src="assets/beachpark.jpg" alt="Beach Park" loading="lazy"><div class="cap"><b>Beach Park</b><span>Pertinho da cidade</span></div></div>
+      <div class="ph rv"><img src="assets/artesanato.png" alt="Artesanato cearense: bonecas, chapéus de couro, pratos pintados e bolsas de palha" loading="lazy"><div class="cap"><b>Artesanato cearense</b><span>Couro, palha, cerâmica e tradição</span></div></div>
+      <div class="ph rv"><img src="assets/portodunas.webp" alt="Vista aérea da praia de Porto das Dunas" loading="lazy"><div class="cap"><b>Porto das Dunas</b><span>Praia e resorts ao lado da cidade</span></div></div>
+      <div class="ph rv"><img src="assets/culinaria.webp" alt="Cesto de lagostas frescas" loading="lazy"><div class="cap"><b>Culinária cearense</b><span>Lagosta, caranguejo, peixada…</span></div></div>
+      <div class="ph w2 rv"><img src="assets/futuro.jpg" alt="Praia do Futuro" loading="lazy"><div class="cap"><b>Praia do Futuro</b><span>Barracas famosas, pertinho da cidade</span></div></div>
+      <div class="ph w2 rv"><img src="assets/terrazo.webp" alt="Fachada do Terrazo Shopping" loading="lazy"><div class="cap"><b>Terrazo Shopping</b><span>Compras, lazer e gastronomia</span></div></div>
+    </div>
+    <div class="gal-hint" aria-hidden="true"><span>Arraste para ver mais</span><span class="gal-dots" id="galDots"></span></div>
+  </div>
+</section>
+
+<!-- POR QUE EUSÉBIO -->
+<section class="why pad">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Na cidade do Eusébio</span>
+      <h2 class="sec">Tudo pronto para uma<br><span class="gold">grande festa!</span></h2>
+    </div>
+    <div class="why-grid">
+      <div class="wc rv"><div class="em">🏆</div><div><b>Cidade mais competitiva <em>do Nordeste</em></b><span>Ranking de Competitividade dos Municípios · CLP 2026</span></div></div>
+      <div class="wc rv"><div class="em">📈</div><div><b>Nº 1 do Ceará em <em>desenvolvimento</em></b><span>Índice Firjan de Desenvolvimento Municipal</span></div></div>
+      <div class="wc rv"><div class="em">✈️</div><div><b>Vizinha de Fortaleza, <em>aeroporto pertinho</em></b><span>Hotéis, praias e Beach Park ao lado da cidade</span></div></div>
+      <div class="wc rv"><div class="em">🤝</div><div><b>Uma cidade que <em>abraça o esporte</em></b><span>Apoio da SEJUV de Eusébio, da Liga Desportiva e do Sport Club Eusébio</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA + FORMULÁRIO -->
+<section class="insc pad" id="inscricao">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Inscrição</span>
+      <h2 class="sec">Inscreva sua equipe<br><span class="gold">em 4 passos</span></h2>
+    </div>
+    <div class="steps">
+      <div class="st rv"><b>Dados da equipe</b><p>Preencha os dados da entidade, do responsável e escolha as categorias.</p></div>
+      <div class="st rv"><b>Pague via Pix</b><p>O valor é por atleta. A chave Pix é o CNPJ da Liga Desportiva de Eusébio.</p></div>
+      <div class="st rv"><b>Envie o comprovante</b><p>O envio do comprovante Pix é obrigatório para concluir a inscrição.</p></div>
+      <div class="st rv"><b>Ficha dos atletas</b><p>Cadastre os atletas e a comissão técnica de cada categoria.</p></div>
+    </div>
+
+    <div class="panel" id="panel">
+      <div class="prog" id="prog">
+        <div class="on" data-s="1"><i>1</i>Inscrição da equipe</div>
+        <div data-s="2"><i>2</i>Ficha dos atletas</div>
+        <div data-s="3"><i>3</i>Confirmação</div>
+      </div>
+
+      <!-- ETAPA 1 -->
+      <form class="step on" id="s1" novalidate>
+        <fieldset class="fs">
+          <legend>Dados da entidade</legend>
+          <div class="grid">
+            <div class="f c12"><label for="entidade">Nome da entidade <span class="req">*</span></label><input id="entidade" name="entidade" required placeholder="Nome do clube, escola, associação ou projeto"><div class="msg">Informe o nome da entidade.</div></div>
+            <div class="f c4"><label for="cepEntidade">CEP <span class="req">*</span></label><input id="cepEntidade" name="cepEntidade" required inputmode="numeric" placeholder="00000-000" data-mask="cep" data-cep="entidade"><div class="msg">Informe um CEP válido.</div></div>
+            <div class="f c8"><label for="enderecoEntidade">Endereço da entidade <span class="req">*</span></label><input id="enderecoEntidade" name="enderecoEntidade" required placeholder="Rua, número, bairro"><div class="msg">Informe o endereço da entidade.</div></div>
+            <div class="f c6"><label for="estado">Estado <span class="req">*</span></label>
+              <select id="estado" name="estado" required>
+                <option value="">Selecione</option>
+                <optgroup label="Nordeste"><option>AL</option><option>BA</option><option>CE</option><option>MA</option><option>PB</option><option>PE</option><option>PI</option><option>RN</option><option>SE</option></optgroup>
+                <optgroup label="Outras regiões"><option>AC</option><option>AM</option><option>AP</option><option>DF</option><option>ES</option><option>GO</option><option>MG</option><option>MS</option><option>MT</option><option>PA</option><option>PR</option><option>RJ</option><option>RO</option><option>RR</option><option>RS</option><option>SC</option><option>SP</option><option>TO</option></optgroup>
+              </select><div class="msg">Selecione o estado.</div></div>
+            <div class="f c6"><label for="cidade">Cidade <span class="req">*</span></label><input id="cidade" name="cidade" required placeholder="Cidade da entidade"><div class="msg">Informe a cidade.</div></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="fs">
+          <legend>Responsável pela equipe</legend>
+          <div class="grid">
+            <div class="f c12"><label for="responsavel">Nome completo do responsável <span class="req">*</span></label><input id="responsavel" name="responsavel" required autocomplete="name" placeholder="Nome completo"><div class="msg">Informe o nome completo do responsável.</div></div>
+            <div class="f c4"><label for="cepResponsavel">CEP <span class="req">*</span></label><input id="cepResponsavel" name="cepResponsavel" required inputmode="numeric" placeholder="00000-000" data-mask="cep" data-cep="responsavel"><div class="msg">Informe um CEP válido.</div></div>
+            <div class="f c8"><label for="enderecoResponsavel">Endereço <span class="req">*</span></label><input id="enderecoResponsavel" name="enderecoResponsavel" required placeholder="Rua e número"><div class="msg">Informe o endereço do responsável.</div></div>
+            <div class="f c12"><label for="bairro">Bairro <span class="req">*</span></label><input id="bairro" name="bairro" required placeholder="Nome do bairro"><div class="msg">Informe o bairro.</div></div>
+            <div class="f c6"><label for="celular">Celular / WhatsApp <span class="req">*</span></label><input id="celular" name="celular" required inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000" data-mask="tel"><div class="msg">Informe um celular válido com DDD.</div></div>
+            <div class="f c6"><label for="email">E-mail <span class="req">*</span></label><input id="email" name="email" type="email" required autocomplete="email" placeholder="email@exemplo.com"><div class="msg">Informe um e-mail válido.</div></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="fs">
+          <legend>Categorias</legend>
+          <div class="f" id="catField">
+            <div class="checks" id="catChecks"></div>
+            <div class="msg">Escolha pelo menos uma categoria.</div>
+          </div>
+        </fieldset>
+
+        <fieldset class="fs">
+          <legend>Hospedagem e delegação</legend>
+          <div class="grid">
+            <div class="f c3"><label for="hospMasc">Hospedagem masc.</label><input id="hospMasc" name="hospMasc" type="number" min="0" inputmode="numeric" placeholder="0" data-hosp></div>
+            <div class="f c3"><label for="dirigMasc">Dirigentes masc.</label><input id="dirigMasc" name="dirigMasc" type="number" min="0" inputmode="numeric" placeholder="0" data-hosp></div>
+            <div class="f c3"><label for="hospFem">Hospedagem fem.</label><input id="hospFem" name="hospFem" type="number" min="0" inputmode="numeric" placeholder="0" data-hosp></div>
+            <div class="f c3"><label for="dirigFem">Dirigentes fem.</label><input id="dirigFem" name="dirigFem" type="number" min="0" inputmode="numeric" placeholder="0" data-hosp></div>
+            <div class="f c4"><label for="hospTotal">Hospedagem total</label><input id="hospTotal" name="hospTotal" readonly placeholder="0" tabindex="-1" style="background:var(--paper)"></div>
+            <div class="f c4"><label for="tipoHospedagem">Preferência de hospedagem</label>
+              <select id="tipoHospedagem" name="tipoHospedagem"><option value="">Não preciso de hospedagem</option><option>Hotel</option><option>Sala de aula</option><option>Alojamento</option></select></div>
+            <div class="f c4"><label for="chegada">Previsão de chegada</label><input id="chegada" name="chegada" type="date" min="2027-01-10" max="2027-01-17"></div>
+            <div class="f c12"><label for="observacoes">Observações</label><textarea id="observacoes" name="observacoes" placeholder="Informações adicionais: horário previsto de chegada, meio de transporte, necessidades da delegação…"></textarea></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="fs" id="pagamento">
+          <legend>Pagamento da inscrição</legend>
+          <div class="grid" style="margin-bottom:16px">
+            <div class="f c6"><label for="atletas">Quantidade de atletas inscritos <span class="req">*</span></label><input id="atletas" name="atletas" type="number" min="1" max="400" required inputmode="numeric" placeholder="Total de atletas de todas as categorias"><div class="msg">Informe quantos atletas serão inscritos.</div><div class="hint">O valor é cobrado por cada atleta inscrito, somando todas as categorias.</div></div>
+          </div>
+          <div class="pay">
+            <div class="sum">
+              <div class="row"><span>Lote</span><span id="sLote">1º lote</span></div>
+              <div class="row"><span>Valor por atleta</span><span id="sUnit">R$ 65,00</span></div>
+              <div class="row"><span>Atletas</span><span id="sQtd">0</span></div>
+              <div class="tot"><span>Total a pagar</span><b id="sTot">R$ 0,00</b></div>
+            </div>
+            <div class="pix">
+              <div class="h"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.6l3.6 3.6-2 2a2.3 2.3 0 01-3.2 0l-2-2L12 2.6zM6.2 8.4l2 2a2.3 2.3 0 000 3.2l-2 2L2.6 12l3.6-3.6zm11.6 0L21.4 12l-3.6 3.6-2-2a2.3 2.3 0 010-3.2l2-2zM12 21.4l-3.6-3.6 2-2a2.3 2.3 0 013.2 0l2 2L12 21.4z"/></svg>Pague via Pix</div>
+              <div class="key"><code id="pixKey">01.431.459/0001-02</code><button type="button" class="btn btn-navy" id="copyPix">Copiar chave</button></div>
+              <dl>
+                <dt>Tipo de chave</dt><dd>CNPJ</dd>
+                <dt>Favorecido</dt><dd>Liga Desportiva de Eusébio</dd>
+                <dt>Agência</dt><dd>3589-0</dd>
+                <dt>Conta</dt><dd>73860-3</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="alert warn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 3l10 18H2L12 3z"/><path d="M12 10v4M12 17.5v.5"/></svg><div><b>O envio do comprovante Pix é obrigatório.</b> Sem o comprovante a inscrição não é concluída. Confira se o valor pago corresponde ao total acima.</div></div>
+          <div class="f" id="compField">
+            <label>Comprovante do Pix <span class="req">*</span></label>
+            <div class="drop" id="drop">
+              <input type="file" id="comprovante" name="comprovante" accept="image/*,application/pdf" required>
+              <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3"/></svg></div>
+              <b id="dropT">Anexar comprovante</b>
+              <span id="dropS">Toque para escolher ou arraste o arquivo · imagem ou PDF até 5 MB</span>
+            </div>
+            <div class="msg" id="compMsg">Anexe o comprovante do Pix para continuar.</div>
+          </div>
+          <div class="ck" style="margin-top:14px" id="termField">
+            <input type="checkbox" id="termos" required><label for="termos">Declaro que as informações são verdadeiras e que o pagamento foi feito para a Liga Desportiva de Eusébio.</label>
+          </div>
+        </fieldset>
+
+        <div class="alert err" id="s1err" hidden></div>
+        <div class="actions">
+          <span class="hint" style="font-size:13px;color:var(--muted);font-weight:700"><span class="req" style="color:var(--err)">*</span> campos obrigatórios</span>
+          <span class="sp"></span>
+          <button type="submit" class="btn btn-gold" id="s1btn">Enviar e ir para a ficha dos atletas
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </form>
+
+      <!-- ETAPA 2 -->
+      <form class="step" id="s2" novalidate>
+        <div class="alert ok"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><div>Inscrição da equipe recebida! Protocolo <b id="proto1">—</b>. Agora preencha a <b>ficha de inscrição de atletas</b> de cada categoria.</div></div>
+        <div class="tabs" id="tabs"></div>
+        <div id="fichas"></div>
+
+        <fieldset class="fs" style="margin-top:26px">
+          <legend>Contato e declaração</legend>
+          <div class="grid">
+            <div class="f c6"><label for="fTel">Telefone para contato <span class="req">*</span></label><input id="fTel" required inputmode="tel" data-mask="tel" placeholder="(00) 00000-0000"><div class="msg">Informe um telefone válido com DDD.</div></div>
+            <div class="f c6"><label for="fEmail">E-mail <span class="req">*</span></label><input id="fEmail" type="email" required placeholder="email@exemplo.com"><div class="msg">Informe um e-mail válido.</div></div>
+          </div>
+          <div class="ck" style="margin-top:14px" id="declField">
+            <input type="checkbox" id="declaracao" required><label for="declaracao">Atesto que os atletas acima foram examinados por médico e estão aptos para participar da competição. A ficha com assinatura do médico (CRM) e do responsável será entregue até o congresso técnico.</label>
+          </div>
+          <div class="alert info"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><div>Use o botão <b>Imprimir ficha</b> de cada categoria para gerar a ficha oficial já preenchida, colher as assinaturas e, se já tiver, anexar a ficha assinada aqui.</div></div>
+        </fieldset>
+
+        <div class="alert err" id="s2err" hidden></div>
+        <div class="actions">
+          <button type="button" class="btn btn-line" id="saveDraft">Salvar rascunho</button>
+          <span class="sp"></span>
+          <button type="submit" class="btn btn-gold" id="s2btn">Enviar fichas dos atletas
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </form>
+
+      <!-- ETAPA 3 -->
+      <div class="step" id="s3">
+        <div class="done-box">
+          <div class="ok"><svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></div>
+          <h3>Inscrição concluída!<br><span class="gold" style="-webkit-text-stroke:1px var(--navy)">Nos vemos em Eusébio</span></h3>
+          <div class="proto" id="proto2">—</div>
+          <p id="doneTxt">Guarde o número do protocolo. A organização vai conferir o comprovante e entrar em contato pelo WhatsApp informado.</p>
+          <div class="done-list">
+            <div><span>1</span>Congresso técnico: <b>&nbsp;08/01/2027, às 19h, pelo Google Meet</b>. O link será enviado para o responsável.</div>
+            <div><span>2</span>Leve a ficha original com as assinaturas do médico e do responsável.</div>
+            <div><span>3</span>Competição: 15 a 17 de janeiro de 2027, em Eusébio – CE.</div>
+          </div>
+          <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+            <a class="btn btn-gold" id="waDone" target="_blank" rel="noopener">Avisar a organização no WhatsApp</a>
+            <button type="button" class="btn btn-line" id="newInsc">Fazer outra inscrição</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="closed" id="closed" hidden>
+        <h3 class="it" style="color:var(--navy);font-size:30px;margin:0 0 10px">Inscrições encerradas</h3>
+        <p style="color:var(--muted);font-weight:600">O prazo de inscrição terminou em 07/01/2027. Fale com a organização pelo WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DÚVIDAS -->
+<section class="faq pad" id="duvidas">
+  <div class="wrap">
+    <div class="rv"><span class="eyebrow">Dúvidas frequentes</span><h2 class="sec">Ficou alguma <span class="gold">dúvida?</span></h2></div>
+    <div class="faq-list">
+      <details class="rv"><summary>Quanto custa a inscrição?</summary><p>O valor é por atleta inscrito: R$ 65,00 no 1º lote (até 15/12/2026) e R$ 80,00 no 2º lote (até 07/01/2027).</p></details>
+      <details class="rv"><summary>Como faço o pagamento?</summary><p>Por Pix. A chave é o CNPJ 01.431.459/0001-02, da Liga Desportiva de Eusébio (Ag. 3589-0 · Cc. 73860-3). Depois anexe o comprovante no formulário — o envio é obrigatório.</p></details>
+      <details class="rv"><summary>Até quando posso me inscrever?</summary><p>As inscrições vão até 07 de janeiro de 2027. O congresso técnico acontece no dia 08 de janeiro, às 19h, pelo Google Meet.</p></details>
+      <details class="rv"><summary>Posso inscrever mais de uma categoria?</summary><p>Sim. Marque todas as categorias da sua entidade na inscrição. Depois você preenche uma ficha de atletas para cada categoria (até 16 atletas por ficha).</p></details>
+      <details class="rv"><summary>Tem hospedagem para as delegações?</summary><p>Informe no formulário a quantidade de atletas e dirigentes que vão precisar de hospedagem e a sua preferência: hotel, sala de aula ou alojamento.</p></details>
+      <details class="rv"><summary>Quais documentos os atletas precisam?</summary><p>Na ficha de inscrição constam nome, data de nascimento e identidade de cada atleta. A ficha precisa da assinatura do médico (com CRM) atestando que os atletas estão aptos, e do responsável pela equipe.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final pad">
+  <div class="wrap">
+    <div class="big rv">Venha participar!</div>
+    <p class="rv">Dessa grande festa do handebol</p>
+    <a class="btn btn-navy rv" href="#inscricao">Inscrever minha equipe agora</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo.webp" alt="1º Eusébio Cup de Handebol" style="width:150px;margin:0 auto">
+    <p style="margin-top:18px;font-weight:800;color:#dbe3ff">Realização e apoio</p>
+    <img class="apoio" src="assets/apoio.png" alt="Prefeitura de Eusébio, Secretaria de Esporte e Juventude, Liga Desportiva de Eusébio, IEL Brasil e Sport Club Eusébio">
+    <p>Com o apoio da Secretaria de Esporte e Juventude (SEJUV) de Eusébio</p>
+    <p>Contato da competição: <a id="footWa" target="_blank" rel="noopener" style="color:var(--gold);font-weight:800">(85) 99109-7707</a></p>
+    <p style="margin-top:14px">© 2026 · 1º Eusébio Cup de Handebol · Eusébio – Ceará</p>
+  </div>
+</footer>
+
+<a class="wa" id="waFloat" target="_blank" rel="noopener" aria-label="Falar com a organização no WhatsApp">
+  <svg width="34" height="34" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* ================= CONFIGURAÇÃO =================
+   ENDPOINT: cole aqui a URL do Google Apps Script (veja LEIA-ME.md).
+   Enquanto estiver vazio, a página funciona em modo de teste: nada é enviado,
+   e ao final a equipe é orientada a enviar o resumo pelo WhatsApp. */
+const CONFIG = {
+  ENDPOINT: '',
+  WHATSAPP: '5585991097707',         // contato da competição: (85) 99109-7707
+  LOTES: [
+    { nome: '1º lote', valor: 65, fim: '2026-12-15T23:59:59-03:00', fimTxt: '15/12/2026' },
+    { nome: '2º lote', valor: 80, fim: '2027-01-07T23:59:59-03:00', fimTxt: '07/01/2027' },
+  ],
+  ANO: 2027,
+  MAX_ATLETAS: 16,
+  MAX_ARQUIVO_MB: 5,
+};
+const CATS = [
+  { id: 'pm', nome: 'Pré-mirim', idade: 'Até 10 anos', min: 0, max: 10 },
+  { id: 'mi', nome: 'Mirim', idade: '11 e 12 anos', min: 11, max: 12 },
+  { id: 'if', nome: 'Infantil', idade: '13 e 14 anos', min: 13, max: 14 },
+  { id: 'ca', nome: 'Cadete', idade: '15 e 16 anos', min: 15, max: 16 },
+  { id: 'jv', nome: 'Juvenil', idade: '17 e 18 anos', min: 17, max: 18 },
+  { id: 'jr', nome: 'Júnior', idade: '19 a 21 anos', min: 19, max: 21 },
+];
+const NAIPES = [['M', 'Masculino', 'Masc.'], ['F', 'Feminino', 'Fem.']];
+const FUNCOES = ['Técnico', 'Aux. técnico', 'Massagista', 'Diretor'];
+
+/* ================= utilidades ================= */
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const brl = v => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const store = {
+  get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+  del(k) { try { localStorage.removeItem(k); } catch {} },
+};
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('on'), 2600); }
+const waLink = txt => `https://wa.me/${CONFIG.WHATSAPP}?text=${encodeURIComponent(txt)}`;
+['#waFloat', '#footWa'].forEach(s => $(s).href = waLink('Olá! Tenho interesse no 1º Eusébio Cup de Handebol.'));
+
+/* ================= lote e contagem ================= */
+function loteAtual(now = new Date()) {
+  const i = CONFIG.LOTES.findIndex(l => now <= new Date(l.fim));
+  return i < 0 ? null : { ...CONFIG.LOTES[i], i };
+}
+function tick() {
+  const L = loteAtual();
+  if (!L) {
+    $('#loteCard').innerHTML = '<p style="margin:0;font-weight:800;color:#fff;text-align:center">Inscrições encerradas</p>';
+    $('#s1').hidden = true; $('#closed').hidden = false; $('#prog').hidden = true;
+    return;
+  }
+  const ms = Math.max(0, new Date(L.fim) - new Date());
+  const d = Math.floor(ms / 864e5), h = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60, s = Math.floor(ms / 1e3) % 60;
+  const p = n => String(n).padStart(2, '0');
+  $('#cdD').textContent = p(d); $('#cdH').textContent = p(h); $('#cdM').textContent = p(m); $('#cdS').textContent = p(s);
+  $('#lcTag').textContent = L.nome;
+  $('#lcPrice').innerHTML = `${brl(L.valor).replace(',00', '')}<small>por atleta</small>`;
+  $('#lcTxt').textContent = L.i === 0 ? `para o fim do 1º lote (${L.fimTxt}) · depois R$ 80` : `para o fim das inscrições (${L.fimTxt})`;
+  [1, 2].forEach(n => {
+    const el = $('#lote' + n), b = $('#b' + n);
+    el.classList.toggle('on', L.i === n - 1); el.classList.toggle('off', L.i > n - 1);
+    b.textContent = L.i === n - 1 ? 'Lote atual' : L.i > n - 1 ? 'Encerrado' : 'Próximo';
+    b.className = 'badge' + (L.i === n - 1 ? '' : ' x');
+  });
+  $('#sLote').textContent = L.nome; $('#sUnit').textContent = brl(L.valor);
+}
+tick(); setInterval(tick, 1000);
+
+/* ================= categorias (seção e checkboxes) ================= */
+$('#catGrid').innerHTML = CATS.map((c, i) => `
+  <div class="cat rv"><span class="n">${String(i + 1).padStart(2, '0')}</span>
+    <h3>${c.nome}</h3><span class="age">${c.idade}</span>
+    <div class="nx"><span>♂ Masculino</span><span>♀ Feminino</span></div></div>`).join('');
+$('#catChecks').innerHTML = CATS.flatMap(c => NAIPES.map(([k, , ab]) => `
+  <div class="ck"><input type="checkbox" id="cat-${c.id}${k}" name="categorias" value="${c.id}${k}">
+  <label for="cat-${c.id}${k}"><span>${c.nome} · ${ab}<small>${c.idade}</small></span></label></div>`)).join('');
+const catLabel = code => { const c = CATS.find(x => x.id === code.slice(0, 2)); const n = NAIPES.find(x => x[0] === code[2]); return `${c.nome} ${n[1]}`; };
+
+/* ================= máscaras e CEP ================= */
+function mask(el) {
+  const t = el.dataset.mask, d = el.value.replace(/\D/g, '');
+  if (t === 'cep') el.value = d.slice(0, 8).replace(/^(\d{5})(\d)/, '$1-$2');
+  if (t === 'tel') {
+    const x = d.slice(0, 11);
+    el.value = x.length <= 2 ? (x ? `(${x}` : '') : x.length <= 6 ? `(${x.slice(0, 2)}) ${x.slice(2)}`
+      : x.length <= 10 ? `(${x.slice(0, 2)}) ${x.slice(2, 6)}-${x.slice(6)}` : `(${x.slice(0, 2)}) ${x.slice(2, 7)}-${x.slice(7)}`;
+  }
+}
+document.addEventListener('input', e => { if (e.target.dataset && e.target.dataset.mask) mask(e.target); });
+async function buscaCep(el) {
+  const cep = el.value.replace(/\D/g, ''); if (cep.length !== 8) return;
+  try {
+    const r = await fetch(`https://viacep.com.br/ws/${cep}/json/`); const j = await r.json(); if (j.erro) return;
+    const end = [j.logradouro, j.bairro].filter(Boolean).join(', ');
+    if (el.dataset.cep === 'entidade') {
+      if (!$('#enderecoEntidade').value) $('#enderecoEntidade').value = end ? end + ', nº ' : '';
+      if (!$('#cidade').value) $('#cidade').value = j.localidade || '';
+      if (!$('#estado').value) $('#estado').value = j.uf || '';
+    } else {
+      if (!$('#enderecoResponsavel').value) $('#enderecoResponsavel').value = j.logradouro ? j.logradouro + ', nº ' : '';
+      if (!$('#bairro').value) $('#bairro').value = j.bairro || '';
+    }
+    saveS1();
+  } catch {}
+}
+$$('[data-cep]').forEach(el => el.addEventListener('blur', () => buscaCep(el)));
+
+/* ================= etapa 1 ================= */
+const S1 = $('#s1');
+function hosp() {
+  const v = id => parseInt($('#' + id).value, 10) || 0;
+  $('#hospTotal').value = v('hospMasc') + v('dirigMasc') + v('hospFem') + v('dirigFem');
+}
+function total() {
+  const L = loteAtual() || CONFIG.LOTES[CONFIG.LOTES.length - 1];
+  const q = Math.max(0, parseInt($('#atletas').value, 10) || 0);
+  $('#sQtd').textContent = q; $('#sTot').textContent = brl(q * L.valor);
+  return { q, L, tot: q * L.valor };
+}
+$$('[data-hosp]').forEach(el => el.addEventListener('input', hosp));
+$('#atletas').addEventListener('input', total);
+$('#copyPix').addEventListener('click', async () => {
+  const key = '01431459000102';
+  try { await navigator.clipboard.writeText(key); } catch {
+    const t = document.createElement('textarea'); t.value = key; document.body.append(t); t.select(); document.execCommand('copy'); t.remove();
+  }
+  toast('Chave Pix (CNPJ) copiada!');
+});
+
+let comprovante = null;
+const drop = $('#drop'), fileIn = $('#comprovante');
+['dragenter', 'dragover'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.add('over'); }));
+['dragleave', 'drop'].forEach(ev => drop.addEventListener(ev, () => drop.classList.remove('over')));
+drop.addEventListener('drop', e => { e.preventDefault(); if (e.dataTransfer.files[0]) setComprovante(e.dataTransfer.files[0]); });
+fileIn.addEventListener('change', () => fileIn.files[0] && setComprovante(fileIn.files[0]));
+function setComprovante(f) {
+  const ok = /^image\/|application\/pdf/.test(f.type);
+  const field = $('#compField');
+  if (!ok) { comprovante = null; field.classList.add('bad'); $('#compMsg').textContent = 'Envie uma imagem (JPG, PNG) ou PDF.'; return; }
+  if (f.size > CONFIG.MAX_ARQUIVO_MB * 1048576) { comprovante = null; field.classList.add('bad'); $('#compMsg').textContent = `O arquivo passa de ${CONFIG.MAX_ARQUIVO_MB} MB. Envie um print ou PDF menor.`; return; }
+  comprovante = f; field.classList.remove('bad');
+  drop.classList.add('has'); $('#dropT').textContent = 'Comprovante anexado ✓'; $('#dropS').textContent = `${f.name} · ${(f.size / 1024).toFixed(0)} KB · toque para trocar`;
+}
+
+function setBad(el, bad) { const f = el.closest('.f'); if (f) f.classList.toggle('bad', bad); return !bad; }
+function checkField(el) {
+  const v = el.value.trim();
+  if (el.required && !v) return setBad(el, true);
+  if (el.type === 'email' && v && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) return setBad(el, true);
+  if (el.dataset.mask === 'cep' && v && v.replace(/\D/g, '').length !== 8) return setBad(el, true);
+  if (el.dataset.mask === 'tel' && v && v.replace(/\D/g, '').length < 10) return setBad(el, true);
+  if (el.type === 'number' && el.required && !(parseInt(v, 10) >= (+el.min || 0))) return setBad(el, true);
+  return setBad(el, false);
+}
+document.addEventListener('focusout', e => { if (e.target.matches('.f input, .f select, .f textarea') && e.target.closest('.f.bad')) checkField(e.target); });
+document.addEventListener('change', e => { if (e.target.matches('.f select')) checkField(e.target); });
+
+const S1_FIELDS = ['entidade', 'cepEntidade', 'enderecoEntidade', 'estado', 'cidade', 'responsavel', 'cepResponsavel', 'enderecoResponsavel', 'bairro', 'celular', 'email', 'hospMasc', 'dirigMasc', 'hospFem', 'dirigFem', 'tipoHospedagem', 'chegada', 'observacoes', 'atletas'];
+function saveS1() {
+  const d = {}; S1_FIELDS.forEach(k => d[k] = $('#' + k).value);
+  d.categorias = $$('input[name=categorias]:checked').map(x => x.value);
+  store.set('ec27_s1', d);
+}
+function loadS1() {
+  const d = store.get('ec27_s1'); if (!d) return;
+  S1_FIELDS.forEach(k => { if (d[k] != null) $('#' + k).value = d[k]; });
+  (d.categorias || []).forEach(c => { const el = $('#cat-' + c); if (el) el.checked = true; });
+  hosp(); total();
+}
+S1.addEventListener('input', saveS1); S1.addEventListener('change', saveS1);
+
+const fileToB64 = f => new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res({ nome: f.name, tipo: f.type, base64: String(r.result).split(',')[1] }); r.onerror = rej; r.readAsDataURL(f); });
+function protocolo() { const a = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; let s = ''; for (let i = 0; i < 6; i++) s += a[Math.floor(Math.random() * a.length)]; return 'EC27-' + s; }
+
+async function enviar(payload) {
+  if (!CONFIG.ENDPOINT) { await new Promise(r => setTimeout(r, 700)); console.info('[modo de teste] dados que seriam enviados:', payload); return { ok: true, teste: true }; }
+  const body = JSON.stringify(payload);
+  try {
+    const r = await fetch(CONFIG.ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body });
+    const j = await r.json(); if (!j.ok) throw new Error(j.erro || 'Falha ao salvar');
+    return j;
+  } catch (err) {
+    // Alguns navegadores bloqueiam a leitura da resposta do Google; envia sem ler a resposta
+    if (err instanceof TypeError) { await fetch(CONFIG.ENDPOINT, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body }); return { ok: true }; }
+    throw err;
+  }
+}
+function busy(btn, on, txt) {
+  if (on) { btn.dataset.html = btn.innerHTML; btn.innerHTML = `<span class="spin"></span>${txt}`; btn.disabled = true; }
+  else { btn.innerHTML = btn.dataset.html; btn.disabled = false; }
+}
+
+let EQUIPE = store.get('ec27_equipe');
+S1.addEventListener('submit', async e => {
+  e.preventDefault();
+  const errs = [];
+  $$('input[required], select[required], textarea[required]', S1).forEach(el => { if (el.type !== 'file' && el.type !== 'checkbox' && !checkField(el)) errs.push(el); });
+  const cats = $$('input[name=categorias]:checked').map(x => x.value);
+  $('#catField').classList.toggle('bad', !cats.length); $('#catField').classList.toggle('grpbad', !cats.length);
+  if (!cats.length) errs.push($('#catField'));
+  if (!comprovante) { $('#compField').classList.add('bad'); $('#compMsg').textContent = 'Anexe o comprovante do Pix para continuar.'; errs.push($('#compField')); }
+  const term = $('#termos').checked; $('#termField label').style.borderColor = term ? '' : 'var(--err)';
+  if (!term) errs.push($('#termField'));
+  const box = $('#s1err');
+  if (errs.length) {
+    box.hidden = false;
+    box.innerHTML = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></svg><div>Faltam ${errs.length} item(ns) para concluir. Confira os campos marcados em vermelho.</div>`;
+    errs[0].scrollIntoView({ behavior: 'smooth', block: 'center' }); const f = errs[0].querySelector ? errs[0] : null; if (f && f.focus && f.tagName) setTimeout(() => f.focus({ preventScroll: true }), 400);
+    return;
+  }
+  box.hidden = true;
+  const { q, L, tot } = total();
+  const v = id => $('#' + id).value.trim();
+  const payload = {
+    tipo: 'equipe', protocolo: protocolo(),
+    entidade: v('entidade'), cepEntidade: v('cepEntidade'), enderecoEntidade: v('enderecoEntidade'),
+    responsavel: v('responsavel'), estado: v('estado'), cidade: v('cidade'),
+    enderecoResponsavel: v('enderecoResponsavel'), bairro: v('bairro'), cepResponsavel: v('cepResponsavel'),
+    celular: v('celular'), email: v('email'), categorias: cats.map(catLabel), codigos: cats,
+    atletas: q, lote: L.nome, valorAtleta: brl(L.valor), valorTotal: brl(tot),
+    hospMasc: v('hospMasc') || '0', dirigMasc: v('dirigMasc') || '0', hospFem: v('hospFem') || '0', dirigFem: v('dirigFem') || '0',
+    hospTotal: v('hospTotal') || '0', tipoHospedagem: v('tipoHospedagem') || 'Não precisa', chegada: v('chegada'), observacoes: v('observacoes'),
+  };
+  const btn = $('#s1btn'); busy(btn, true, 'Enviando inscrição…');
+  try {
+    payload.comprovante = await fileToB64(comprovante);
+    const r = await enviar(payload);
+    delete payload.comprovante;
+    EQUIPE = { ...payload, teste: !!r.teste };
+    store.set('ec27_equipe', EQUIPE);
+    store.del('ec27_s1');
+    startS2();
+  } catch (err) {
+    box.hidden = false; box.innerHTML = `<div>Não foi possível enviar agora (${esc(err.message)}). Verifique sua internet e tente novamente. Se o problema continuar, fale com a organização no WhatsApp.</div>`;
+  } finally { busy(btn, false); }
+});
+
+/* ================= etapa 2: fichas ================= */
+let FICHAS = {};      // código -> { atletas:[{nome,nascimento,identidade}], dirigentes:[{funcao,nome,cref}], arquivo:File|null }
+let ativa = null;
+function goStep(n) {
+  $$('.step').forEach((s, i) => s.classList.toggle('on', i === n - 1));
+  $$('#prog div').forEach(d => { const s = +d.dataset.s; d.classList.toggle('on', s === n); d.classList.toggle('done', s < n); });
+  $('#panel').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+function startS2() {
+  const saved = store.get('ec27_fichas') || {};
+  FICHAS = {};
+  EQUIPE.codigos.forEach(c => {
+    const s = saved[c];
+    FICHAS[c] = {
+      atletas: s && s.atletas && s.atletas.length ? s.atletas : Array.from({ length: 8 }, () => ({ nome: '', nascimento: '', identidade: '' })),
+      dirigentes: s && s.dirigentes ? s.dirigentes : FUNCOES.map(f => ({ funcao: f, nome: '', cref: '' })),
+      arquivo: null,
+    };
+  });
+  $('#proto1').textContent = EQUIPE.protocolo;
+  $('#fTel').value = $('#fTel').value || EQUIPE.celular; $('#fEmail').value = $('#fEmail').value || EQUIPE.email;
+  ativa = EQUIPE.codigos[0];
+  renderTabs(); renderFichas(); goStep(2);
+}
+function idadeEm2027(iso) { if (!iso) return null; const y = +iso.slice(0, 4); return y ? CONFIG.ANO - y : null; }
+function rowHTML(c, i, a) {
+  const cat = CATS.find(x => x.id === c.slice(0, 2)), age = idadeEm2027(a.nascimento);
+  const warn = age != null && age > cat.max ? `<div class="warnage">⚠ ${age} anos em ${CONFIG.ANO}: acima da idade do ${cat.nome} (${cat.idade.toLowerCase()})</div>` : '';
+  return `<tr data-i="${i}">
+    <td class="n">${String(i + 1).padStart(2, '0')}</td>
+    <td class="nome"><input data-k="nome" value="${esc(a.nome)}" placeholder="Nome completo do atleta" aria-label="Nome do atleta ${i + 1}"></td>
+    <td><input data-k="nascimento" type="date" value="${esc(a.nascimento)}" min="2000-01-01" max="2025-12-31" aria-label="Data de nascimento do atleta ${i + 1}">${warn}</td>
+    <td><input data-k="identidade" value="${esc(a.identidade)}" placeholder="RG ou certidão" aria-label="Identidade do atleta ${i + 1}"></td>
+    <td class="x"><button type="button" data-del="${i}" aria-label="Remover linha ${i + 1}">×</button></td></tr>`;
+}
+const filled = a => a.nome.trim() || a.nascimento || a.identidade.trim();
+function countOK(c) { return FICHAS[c].atletas.filter(a => a.nome.trim() && a.nascimento && a.identidade.trim()).length; }
+function renderTabs() {
+  $('#tabs').innerHTML = EQUIPE.codigos.map(c => {
+    const n = countOK(c), tec = FICHAS[c].dirigentes[0].nome.trim();
+    return `<button type="button" class="tab ${c === ativa ? 'on' : ''} ${n && tec ? 'okk' : ''}" data-tab="${c}">${catLabel(c)} <span class="cnt">${n}</span></button>`;
+  }).join('');
+}
+function renderFichas() {
+  $('#fichas').innerHTML = EQUIPE.codigos.map(c => {
+    const F = FICHAS[c], cat = CATS.find(x => x.id === c.slice(0, 2));
+    return `<div class="ficha ${c === ativa ? 'on' : ''}" data-f="${c}">
+      <div class="fh"><div><h3>${catLabel(c)}</h3><div class="sub">${esc(EQUIPE.entidade)} · ${cat.idade} · até ${CONFIG.MAX_ATLETAS} atletas</div></div>
+        <button type="button" class="btn btn-line" data-print="${c}" style="padding:10px 14px;font-size:13px">🖨 Imprimir ficha</button></div>
+      <table class="tbl"><thead><tr><th>Nº</th><th>Nome do atleta</th><th>Data de nasc.</th><th>Identidade</th><th></th></tr></thead>
+        <tbody>${F.atletas.map((a, i) => rowHTML(c, i, a)).join('')}</tbody></table>
+      <button type="button" class="btn btn-line" data-add="${c}" style="margin-top:6px;padding:10px 14px;font-size:13px" ${F.atletas.length >= CONFIG.MAX_ATLETAS ? 'disabled' : ''}>+ Adicionar atleta</button>
+      <fieldset class="fs" style="margin:24px 0 0"><legend style="font-size:18px">Comissão técnica</legend>
+        <div class="dirig">${F.dirigentes.map((d, j) => `
+          <div class="f"><label>${d.funcao}${j === 0 ? ' <span class="req">*</span>' : ''}</label><input data-dk="nome" data-j="${j}" value="${esc(d.nome)}" placeholder="Nome completo"></div>
+          <div class="f"><label>Nº do CREF${j === 0 ? '' : ' (se houver)'}</label><input data-dk="cref" data-j="${j}" value="${esc(d.cref)}" placeholder="000000-G/UF"></div>`).join('')}
+        </div></fieldset>
+      <div class="f" style="margin-top:20px"><label>Ficha assinada pelo médico e pelo responsável (opcional agora)</label>
+        <div class="drop ${F.arquivo ? 'has' : ''}" style="padding:18px"><input type="file" accept="image/*,application/pdf" data-file="${c}">
+          <b>${F.arquivo ? 'Ficha anexada ✓' : 'Anexar ficha assinada'}</b><span>${F.arquivo ? esc(F.arquivo.name) : 'Imagem ou PDF até 5 MB · pode ser entregue até o congresso técnico'}</span></div></div>
+    </div>`;
+  }).join('');
+}
+function saveFichas() {
+  const o = {}; Object.keys(FICHAS).forEach(c => o[c] = { atletas: FICHAS[c].atletas, dirigentes: FICHAS[c].dirigentes }); store.set('ec27_fichas', o);
+}
+$('#tabs').addEventListener('click', e => {
+  const b = e.target.closest('[data-tab]'); if (!b) return;
+  ativa = b.dataset.tab; renderTabs();
+  $$('.ficha').forEach(f => f.classList.toggle('on', f.dataset.f === ativa));
+});
+$('#fichas').addEventListener('input', e => {
+  const t = e.target, fx = t.closest('.ficha'); if (!fx) return; const c = fx.dataset.f;
+  if (t.dataset.k) { const i = +t.closest('tr').dataset.i; FICHAS[c].atletas[i][t.dataset.k] = t.value; t.classList.remove('bad'); }
+  if (t.dataset.dk) { FICHAS[c].dirigentes[+t.dataset.j][t.dataset.dk] = t.value; t.closest('.f').classList.remove('bad'); }
+  saveFichas(); renderTabs();
+});
+$('#fichas').addEventListener('change', e => {
+  const t = e.target, fx = t.closest('.ficha'); if (!fx) return; const c = fx.dataset.f;
+  if (t.dataset.k === 'nascimento') { const tr = t.closest('tr'), i = +tr.dataset.i; const tmp = document.createElement('tbody'); tmp.innerHTML = rowHTML(c, i, FICHAS[c].atletas[i]); const nd = tmp.firstElementChild; tr.children[2].replaceWith(nd.children[2]); }
+  if (t.dataset.file) {
+    const f = t.files[0]; if (!f) return;
+    if (!/^image\/|application\/pdf/.test(f.type) || f.size > CONFIG.MAX_ARQUIVO_MB * 1048576) { toast('Envie imagem ou PDF de até 5 MB.'); t.value = ''; return; }
+    FICHAS[c].arquivo = f; const d = t.closest('.drop'); d.classList.add('has'); d.querySelector('b').textContent = 'Ficha anexada ✓'; d.querySelector('span').textContent = f.name;
+  }
+});
+$('#fichas').addEventListener('click', e => {
+  const add = e.target.closest('[data-add]'), del = e.target.closest('[data-del]'), pr = e.target.closest('[data-print]');
+  if (add) { const c = add.dataset.add; if (FICHAS[c].atletas.length < CONFIG.MAX_ATLETAS) { FICHAS[c].atletas.push({ nome: '', nascimento: '', identidade: '' }); keepFiles(() => renderFichas()); const rows = $$(`.ficha[data-f="${c}"] tbody tr`); rows[rows.length - 1].querySelector('input').focus(); saveFichas(); } }
+  if (del) { const c = del.closest('.ficha').dataset.f, i = +del.dataset.del; FICHAS[c].atletas.splice(i, 1); if (!FICHAS[c].atletas.length) FICHAS[c].atletas.push({ nome: '', nascimento: '', identidade: '' }); keepFiles(() => renderFichas()); renderTabs(); saveFichas(); }
+  if (pr) imprimir(pr.dataset.print);
+});
+function keepFiles(fn) { fn(); }
+$('#saveDraft').addEventListener('click', () => { saveFichas(); toast('Rascunho salvo neste aparelho.'); });
+
+function imprimir(c) {
+  const F = FICHAS[c], naipe = c[2], cat = CATS.find(x => x.id === c.slice(0, 2));
+  const linhas = Array.from({ length: CONFIG.MAX_ATLETAS }, (_, i) => F.atletas[i] || { nome: '', nascimento: '', identidade: '' });
+  const dt = s => s ? s.split('-').reverse().join('/') : '';
+  const w = window.open('', '_blank');
+  if (!w) { toast('Permita pop-ups para imprimir a ficha.'); return; }
+  w.document.write(`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Ficha de atletas · ${esc(catLabel(c))}</title>
+  <style>body{font:13px Arial,sans-serif;color:#000;margin:24px}h1{text-align:center;font-size:18px;margin:0 0 4px}h2{text-align:center;font-size:13px;margin:0 0 14px;font-weight:normal}
+  table{width:100%;border-collapse:collapse;margin-bottom:12px}td,th{border:1px solid #000;padding:5px 6px;text-align:left}th{background:#eee}
+  .n{width:28px;text-align:center}.hd td{border:1px solid #000}.sig{display:flex;gap:30px;margin-top:40px}.sig div{flex:1;border-top:1px solid #000;padding-top:4px;text-align:center}
+  .x{display:inline-block;width:12px;height:12px;border:1px solid #000;text-align:center;line-height:11px;font-size:11px;margin:0 4px 0 10px;vertical-align:middle}
+  @media print{body{margin:10mm}}</style></head><body>
+  <h1>FICHA DE INSCRIÇÃO DE ATLETAS</h1><h2>1º Eusébio Cup de Handebol · 15 a 17 de janeiro de 2027 · Eusébio – CE · Protocolo ${esc(EQUIPE.protocolo)}</h2>
+  <table class="hd"><tr><td colspan="2"><b>Entidade:</b> ${esc(EQUIPE.entidade)}</td></tr>
+  <tr><td><b>Categoria:</b> ${esc(cat.nome)} (${esc(cat.idade)})</td><td><span class="x">${naipe === 'M' ? 'X' : ''}</span>Masc.<span class="x">${naipe === 'F' ? 'X' : ''}</span>Fem.</td></tr></table>
+  <table><tr><th class="n">Nº</th><th>Nome do atleta</th><th style="width:110px">Data de nasc.</th><th style="width:150px">Identidade</th></tr>
+  ${linhas.map((a, i) => `<tr><td class="n">${String(i + 1).padStart(2, '0')}</td><td>${esc(a.nome)}</td><td>${dt(a.nascimento)}</td><td>${esc(a.identidade)}</td></tr>`).join('')}</table>
+  <table><tr><th class="n">Nº</th><th>Dirigentes</th><th style="width:160px">Nº do CREF</th></tr>
+  ${F.dirigentes.map((d, j) => `<tr><td class="n">${String(j + 1).padStart(2, '0')}</td><td><b>${esc(d.funcao)}:</b> ${esc(d.nome)}</td><td>${esc(d.cref)}</td></tr>`).join('')}</table>
+  <p>Atesto que os atletas acima foram por mim examinados e estão aptos para participarem da competição.</p>
+  <div class="sig"><div>Ass. do Médico e C.R.M.</div><div>Ass. do Responsável pela equipe</div></div>
+  <p style="margin-top:24px"><b>Telefone para contato:</b> ${esc($('#fTel').value)} &nbsp;&nbsp; <b>E-mail:</b> ${esc($('#fEmail').value)}</p>
+  <script>window.onload=()=>setTimeout(()=>window.print(),300)<\/script></body></html>`);
+  w.document.close();
+}
+
+$('#s2').addEventListener('submit', async e => {
+  e.preventDefault();
+  const box = $('#s2err'), probs = [];
+  let first = null;
+  EQUIPE.codigos.forEach(c => {
+    const F = FICHAS[c], fx = $(`.ficha[data-f="${c}"]`);
+    let n = 0;
+    F.atletas.forEach((a, i) => {
+      if (!filled(a)) return;
+      const tr = fx.querySelector(`tr[data-i="${i}"]`);
+      ['nome', 'nascimento', 'identidade'].forEach(k => { const bad = !String(a[k]).trim(); tr.querySelector(`[data-k="${k}"]`).classList.toggle('bad', bad); if (bad) { probs.push(`${catLabel(c)}: complete os dados do atleta ${i + 1}`); first = first || c; } });
+      n++;
+    });
+    if (!n) { probs.push(`${catLabel(c)}: cadastre pelo menos um atleta`); first = first || c; }
+    if (!F.dirigentes[0].nome.trim()) { fx.querySelector('[data-dk="nome"][data-j="0"]').closest('.f').classList.add('bad'); probs.push(`${catLabel(c)}: informe o técnico`); first = first || c; }
+  });
+  ['fTel', 'fEmail'].forEach(id => { if (!checkField($('#' + id))) probs.push('Informe telefone e e-mail válidos'); });
+  const decl = $('#declaracao').checked; $('#declField label').style.borderColor = decl ? '' : 'var(--err)';
+  if (!decl) probs.push('Marque a declaração de aptidão dos atletas');
+  if (probs.length) {
+    const uniq = [...new Set(probs)];
+    box.hidden = false; box.innerHTML = `<div><b>Antes de enviar, confira:</b><br>${uniq.slice(0, 6).map(esc).join('<br>')}${uniq.length > 6 ? '<br>…' : ''}</div>`;
+    if (first && first !== ativa) { ativa = first; renderTabs(); $$('.ficha').forEach(f => f.classList.toggle('on', f.dataset.f === ativa)); }
+    box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+  box.hidden = true;
+  const totalAtl = EQUIPE.codigos.reduce((s, c) => s + FICHAS[c].atletas.filter(filled).length, 0);
+  const btn = $('#s2btn'); busy(btn, true, 'Enviando fichas…');
+  try {
+    const fichas = [];
+    for (const c of EQUIPE.codigos) {
+      const F = FICHAS[c];
+      fichas.push({ categoria: catLabel(c), atletas: F.atletas.filter(filled).map(a => ({ ...a, nascimento: a.nascimento.split('-').reverse().join('/') })), dirigentes: F.dirigentes, arquivo: F.arquivo ? await fileToB64(F.arquivo) : null });
+    }
+    const r = await enviar({ tipo: 'atletas', protocolo: EQUIPE.protocolo, entidade: EQUIPE.entidade, telefone: $('#fTel').value, email: $('#fEmail').value, declaracao: true, fichas });
+    finish(totalAtl, !!r.teste || EQUIPE.teste);
+  } catch (err) {
+    box.hidden = false; box.innerHTML = `<div>Não foi possível enviar agora (${esc(err.message)}). Seus dados estão salvos neste aparelho; tente novamente em instantes.</div>`;
+  } finally { busy(btn, false); }
+});
+
+function finish(totalAtl, teste) {
+  $('#proto2').textContent = EQUIPE.protocolo;
+  const resumo = [
+    '*1º EUSÉBIO CUP DE HANDEBOL — INSCRIÇÃO*',
+    `Protocolo: ${EQUIPE.protocolo}`,
+    `Entidade: ${EQUIPE.entidade} (${EQUIPE.cidade}/${EQUIPE.estado})`,
+    `Responsável: ${EQUIPE.responsavel} · ${EQUIPE.celular}`,
+    `Categorias: ${EQUIPE.categorias.join(', ')}`,
+    `Atletas pagos: ${EQUIPE.atletas} · ${EQUIPE.lote} · Total ${EQUIPE.valorTotal}`,
+    `Atletas cadastrados nas fichas: ${totalAtl}`,
+  ].join('\n');
+  $('#waDone').href = waLink(resumo + (teste ? '\n\nSegue o comprovante do Pix em anexo.' : ''));
+  $('#doneTxt').textContent = teste
+    ? 'Envie agora o resumo e o comprovante do Pix pelo WhatsApp da organização para validar a sua inscrição.'
+    : 'Guarde o número do protocolo. A organização vai conferir o comprovante e entrar em contato pelo WhatsApp informado.';
+  if (totalAtl > EQUIPE.atletas) $('#doneTxt').textContent += ` Atenção: você cadastrou ${totalAtl} atletas, mas pagou por ${EQUIPE.atletas}. Complete o pagamento da diferença.`;
+  store.del('ec27_equipe'); store.del('ec27_fichas');
+  goStep(3);
+}
+$('#newInsc').addEventListener('click', () => {
+  S1.reset(); comprovante = null; drop.classList.remove('has'); $('#dropT').textContent = 'Anexar comprovante'; $('#dropS').textContent = 'Toque para escolher ou arraste o arquivo · imagem ou PDF até 5 MB';
+  $('#declaracao').checked = false; EQUIPE = null; total(); hosp(); goStep(1);
+});
+
+/* retomar inscrição em andamento */
+loadS1();
+if (EQUIPE && EQUIPE.codigos) startS2Silent();
+function startS2Silent() { const y = scrollY; startS2(); scrollTo(0, y); }
+
+/* ================= galeria (carrossel no celular) ================= */
+(() => {
+  const gal = $('.gal'), cards = $$('.ph', gal), dots = $('#galDots');
+  dots.innerHTML = cards.map(() => '<i></i>').join('');
+  const upd = () => {
+    const w = cards[0].offsetWidth + 12, i = Math.min(cards.length - 1, Math.round(gal.scrollLeft / w));
+    $$('i', dots).forEach((d, k) => d.classList.toggle('on', k === i));
+  };
+  gal.addEventListener('scroll', upd, { passive: true }); upd();
+})();
+
+/* ================= "HANDEBOL" sempre cabe na largura ================= */
+function fitHB() {
+  const hb = $('.hero h1 .hb'), box = hb.parentElement;
+  hb.style.fontSize = '';
+  const max = box.clientWidth, w = hb.scrollWidth;
+  if (w > max) hb.style.fontSize = (parseFloat(getComputedStyle(hb).fontSize) * max / w * 0.97) + 'px';
+}
+fitHB(); addEventListener('resize', fitHB);
+if (document.fonts) document.fonts.ready.then(fitHB);
+
+/* ================= efeitos ================= */
+const topBar = $('#top');
+addEventListener('scroll', () => topBar.classList.toggle('solid', scrollY > 40), { passive: true });
+const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+$$('.rv').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(el); });
+</script>
+</body>
+</html>
