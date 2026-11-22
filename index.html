@@ -25,6 +25,7 @@ document.addEventListener('error', e => { if (e.target.tagName === 'IMG') e.targ
   --B: 'Barlow Condensed', 'Avenir Next Condensed', 'Roboto Condensed', 'Arial Narrow', sans-serif;
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{scroll-behavior:smooth;overflow-x:hidden;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 section,header,footer,.ufs{max-width:100vw;overflow-x:clip}
 h1,h2,h3,p,b,span,label{overflow-wrap:break-word}
@@ -369,6 +370,75 @@ footer p{color:#8f9bcc;font-size:13px;font-weight:600;margin:6px 0}
 .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ===== ajustes finos para celular ===== */
+@media (max-width:640px){
+  .pad{padding:54px 0}
+  h2.sec{font-size:clamp(28px,8.4vw,38px)}
+  .lead{font-size:15.5px}
+  /* categorias em 2 colunas, compactas */
+  .cat-grid{grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+  .cat{padding:16px 14px 14px;border-radius:18px}
+  .cat h3{font-size:clamp(19px,5.6vw,24px)}
+  .cat .age{font-size:11.5px;padding:4px 8px;margin-top:8px}
+  .cat .nx{margin-top:10px;gap:5px;font-size:11px;flex-wrap:wrap}
+  .cat .nx span{padding:2px 7px}
+  .cat .n{font-size:90px;bottom:-18px}
+  .naipe{margin-top:20px}
+  /* estatísticas */
+  .stats{gap:10px;margin-top:22px}
+  .stat{padding:14px}
+  .stat span{font-size:13px}
+  /* lotes */
+  .lote-grid{gap:14px;margin-top:24px}
+  .lote{padding:22px 20px;border-radius:22px}
+  .lote .badge{top:18px;right:18px}
+  .lote .until{font-size:14px;margin-top:12px;padding-top:12px}
+  .dates{gap:10px}
+  .date{padding:12px}
+  .date .ic{width:44px;height:44px;border-radius:12px}
+  .date b{font-size:15px}
+  .date span{font-size:13px}
+  /* por que Eusébio */
+  .why-grid{gap:10px;margin-top:22px}
+  .wc{gap:14px;padding:14px 16px;border-radius:18px}
+  .wc .em{width:48px;height:48px;font-size:22px}
+  .wc b{font-size:16px}
+  .wc span{font-size:12px;margin-top:4px}
+  /* ícones da experiência */
+  .icons{gap:10px;margin:24px 0 20px}
+  .icons div{padding:12px 6px}
+  .icons .em{width:56px;height:56px;font-size:26px;border-width:3px;margin-bottom:6px}
+  .icons b{font-size:13px}
+  /* passos da inscrição: lista compacta */
+  .steps{grid-template-columns:1fr;gap:10px;row-gap:10px;margin-top:22px}
+  .st{display:grid;grid-template-columns:44px 1fr;column-gap:14px;align-items:center;padding:14px 16px;border-radius:18px}
+  .st::before{position:static;grid-row:span 2;width:44px;height:44px;font-size:24px;box-shadow:none}
+  .st b{margin:0;font-size:16px}
+  .st p{margin:2px 0 0;font-size:13px}
+  /* formulário mais largo */
+  .panel{margin:24px -8px 0;border-radius:22px}
+  .step{padding:22px 16px}
+  .fs legend{font-size:18px}
+  .f input,.f select,.f textarea{padding:12px 14px}
+  .sum .tot b{font-size:40px}
+  .pix{padding:18px}
+  .actions .btn{width:100%}
+  .actions .sp{display:none}
+  .ficha{padding:14px 10px;border-radius:16px}
+  /* card do lote no topo */
+  .lote-card{padding:14px}
+  .lote-card .price{font-size:26px}
+  .cd b{font-size:26px}
+  .lote-card p{font-size:12px}
+  /* dúvidas e chamada final */
+  .faq summary{font-size:15px;padding:15px 0}
+  .faq details{padding:0 16px}
+  .cta-final .btn-navy{font-size:15px;padding:16px 20px}
+  /* botão do WhatsApp menor, para não cobrir os campos */
+  .wa{width:52px;height:52px;right:12px;bottom:12px}
+  .wa svg{width:28px;height:28px}
+}
 </style>
 </head>
 <body>
@@ -735,12 +805,12 @@ footer p{color:#8f9bcc;font-size:13px;font-weight:600;margin:6px 0}
     <p style="margin-top:18px;font-weight:800;color:#dbe3ff">Realização e apoio</p>
     <img class="apoio" src="assets/apoio.png" alt="Prefeitura de Eusébio, Secretaria de Esporte e Juventude, Liga Desportiva de Eusébio, IEL Brasil e Sport Club Eusébio">
     <p>Com o apoio da Secretaria de Esporte e Juventude (SEJUV) de Eusébio</p>
-    <p>Contato da competição: <a id="footWa" target="_blank" rel="noopener" style="color:var(--gold);font-weight:800">(85) 99109-7707</a></p>
+    <p>Contato da competição: <a id="footWa" href="https://wa.me/5585991097707?text=Ol%C3%A1!%20Tenho%20interesse%20no%201%C2%BA%20Eus%C3%A9bio%20Cup%20de%20Handebol." target="_blank" rel="noopener" style="color:var(--gold);font-weight:800">(85) 99109-7707</a></p>
     <p style="margin-top:14px">© 2026 · 1º Eusébio Cup de Handebol · Eusébio – Ceará</p>
   </div>
 </footer>
 
-<a class="wa" id="waFloat" target="_blank" rel="noopener" aria-label="Falar com a organização no WhatsApp">
+<a class="wa" id="waFloat" href="https://wa.me/5585991097707?text=Ol%C3%A1!%20Tenho%20interesse%20no%201%C2%BA%20Eus%C3%A9bio%20Cup%20de%20Handebol." target="_blank" rel="noopener" aria-label="Falar com a organização no WhatsApp">
   <svg width="34" height="34" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg>
 </a>
 <div class="toast" id="toast" role="status"></div>
@@ -784,8 +854,6 @@ const store = {
 };
 function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('on'), 2600); }
 const waLink = txt => `https://wa.me/${CONFIG.WHATSAPP}?text=${encodeURIComponent(txt)}`;
-['#waFloat', '#footWa'].forEach(s => $(s).href = waLink('Olá! Tenho interesse no 1º Eusébio Cup de Handebol.'));
-
 /* ================= lote e contagem ================= */
 function loteAtual(now = new Date()) {
   const i = CONFIG.LOTES.findIndex(l => now <= new Date(l.fim));
@@ -804,7 +872,7 @@ function tick() {
   $('#cdD').textContent = p(d); $('#cdH').textContent = p(h); $('#cdM').textContent = p(m); $('#cdS').textContent = p(s);
   $('#lcTag').textContent = L.nome;
   $('#lcPrice').innerHTML = `${brl(L.valor).replace(',00', '')}<small>por atleta</small>`;
-  $('#lcTxt').textContent = L.i === 0 ? `para o fim do 1º lote (${L.fimTxt}) · depois R$ 80` : `para o fim das inscrições (${L.fimTxt})`;
+  $('#lcTxt').textContent = L.i === 0 ? `para o fim do 1º lote (${L.fimTxt})` : `para o fim das inscrições (${L.fimTxt})`;
   [1, 2].forEach(n => {
     const el = $('#lote' + n), b = $('#b' + n);
     el.classList.toggle('on', L.i === n - 1); el.classList.toggle('off', L.i > n - 1);
