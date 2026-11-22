@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>1º Eusébio Cup de Handebol · Inscrições abertas</title>
-<meta name="description" content="1º Eusébio Cup de Handebol, de 15 a 17 de janeiro de 2027 em Eusébio, Ceará. Inscrições abertas para equipes de jovens atletas de todo o Nordeste.">
+<meta name="description" content="1º Eusébio Cup de Handebol, de 15 a 17 de janeiro de 2027 em Eusébio, Ceará. A primeira edição de uma competição que nasce para reunir equipes de jovens atletas de todo o Brasil. Inscrições abertas.">
 <meta property="og:title" content="1º Eusébio Cup de Handebol · Inscrições abertas">
-<meta property="og:description" content="15 a 17 de janeiro de 2027 · Eusébio – CE. Pré-mirim ao Júnior, masculino e feminino. Inscreva sua equipe!">
+<meta property="og:description" content="15 a 17 de janeiro de 2027 · Eusébio – CE. A estreia de uma nova competição de handebol, do Pré-mirim ao Júnior, masculino e feminino. Inscreva sua equipe!">
 <meta property="og:image" content="assets/cartaz-oficial.jpg">
 <meta name="theme-color" content="#071447">
 <script>/* se uma imagem não carregar (ex.: abriram só o index.html sem a pasta assets), esconde a caixa quebrada */
@@ -158,6 +158,16 @@ section{position:relative}
 .lote .until{margin-top:16px;display:flex;align-items:center;gap:10px;font-weight:800;font-size:16px;padding-top:16px;border-top:2px dashed currentColor}
 .lote.on .until{border-color:rgba(7,20,71,.35)}
 .lote:not(.on) .until{border-color:rgba(255,255,255,.2)}
+.ex{display:flex;gap:16px;align-items:flex-start;margin-top:20px;background:rgba(255,194,14,.1);border:2px dashed var(--gold);border-radius:22px;padding:20px 22px}
+.ex-ic{flex:none;width:48px;height:48px;border-radius:14px;background:var(--gold);display:grid;place-items:center;font-size:24px}
+.ex b{color:#fff}
+.ex > div > b:first-child{display:block;font:italic 900 18px var(--F);text-transform:uppercase;color:var(--gold)}
+.ex p{margin:6px 0 10px;color:#dbe3ff;font-weight:600}
+.ex u{text-decoration-color:var(--gold);text-decoration-thickness:3px;text-underline-offset:3px}
+.ex-calc{display:inline-block;background:var(--navy);border-radius:12px;padding:8px 14px;font-weight:700;font-size:15px}
+.ex-calc span{color:#c9d3f5;margin-right:4px}
+.ex-calc b{color:var(--gold)}
+@media (max-width:640px){.ex{padding:16px;gap:12px}.ex-ic{width:40px;height:40px;font-size:20px}.ex p{font-size:14px}.ex-calc{font-size:13.5px}}
 .dates{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
 .date{display:flex;gap:14px;align-items:center;background:rgba(26,79,224,.22);border:1px solid rgba(74,163,255,.35);border-radius:var(--r);padding:16px}
 .date .ic{flex:none;width:52px;height:52px;border-radius:14px;background:var(--gold);color:var(--navy);display:grid;place-items:center}
@@ -463,9 +473,9 @@ footer p{color:#8f9bcc;font-size:13px;font-weight:600;margin:6px 0}
   <div class="marq m2" aria-hidden="true"><span>HANDEBOL HANDEBOL HANDEBOL HANDEBOL&nbsp;</span><span>HANDEBOL HANDEBOL HANDEBOL HANDEBOL&nbsp;</span></div>
   <div class="wrap hero-in">
     <div>
-      <span class="chip">🏅 Chamada para jovens atletas</span>
-      <h1>Atenção, times de <span class="hb">Handebol</span> do Nordeste!</h1>
-      <p class="lead hl">Três dias de muito handebol, da base ao Júnior, na cidade vizinha a Fortaleza. Traga sua equipe para o <b class="gold">1º Eusébio Cup</b>!</p>
+      <span class="chip">🏆 1ª edição · Chamada para jovens atletas</span>
+      <h1>Atenção, times de <span class="hb">Handebol</span> vem aí a grande estreia!</h1>
+      <p class="lead hl">Três dias de muito handebol, do Pré-mirim ao Júnior, na cidade vizinha a Fortaleza. Coloque sua equipe na <b class="gold">primeira edição do Eusébio Cup</b> e faça parte dessa história desde o primeiro apito!</p>
       <div class="meta">
         <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>15 a 17 de janeiro de 2027</div>
         <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Eusébio — Ceará</div>
@@ -479,7 +489,7 @@ footer p{color:#8f9bcc;font-size:13px;font-weight:600;margin:6px 0}
     <div class="vis">
       <img class="logo-big" src="assets/logo.webp" alt="Logo do 1º Eusébio Cup de Handebol" width="520" height="520">
       <div class="lote-card" id="loteCard">
-        <div class="lt"><span class="tag" id="lcTag">1º lote</span><span class="price" id="lcPrice">R$ 65<small>por atleta</small></span></div>
+        <div class="lt"><span class="tag" id="lcTag">1º lote</span><span class="price" id="lcPrice">R$ 65<small>por atleta/categoria</small></span></div>
         <div class="cd" id="cd"><div><b id="cdD">00</b><span>dias</span></div><div><b id="cdH">00</b><span>horas</span></div><div><b id="cdM">00</b><span>min</span></div><div><b id="cdS">00</b><span>seg</span></div></div>
         <p id="lcTxt">para o fim do 1º lote (15/12/2026)</p>
       </div>
@@ -487,8 +497,8 @@ footer p{color:#8f9bcc;font-size:13px;font-weight:600;margin:6px 0}
   </div>
 </section>
 
-<div class="ufs" aria-label="Estados do Nordeste convidados">
-  <div class="row"><span>Alagoas <i></i> Bahia <i></i> Ceará <i></i> Maranhão <i></i> Paraíba <i></i> Pernambuco <i></i> Piauí <i></i> Rio Grande do Norte <i></i> Sergipe <i></i></span><span aria-hidden="true">Alagoas <i></i> Bahia <i></i> Ceará <i></i> Maranhão <i></i> Paraíba <i></i> Pernambuco <i></i> Piauí <i></i> Rio Grande do Norte <i></i> Sergipe <i></i></span></div>
+<div class="ufs" aria-label="1ª edição do Eusébio Cup">
+  <div class="row"><span>1ª edição <i></i> A grande estreia <i></i> Pré-mirim ao Júnior <i></i> Masculino e feminino <i></i> 15 a 17 de janeiro de 2027 <i></i> Eusébio – CE <i></i> Faça parte da história <i></i></span><span aria-hidden="true">1ª edição <i></i> A grande estreia <i></i> Pré-mirim ao Júnior <i></i> Masculino e feminino <i></i> 15 a 17 de janeiro de 2027 <i></i> Eusébio – CE <i></i> Faça parte da história <i></i></span></div>
 </div>
 
 <!-- CHAMADA -->
@@ -496,13 +506,13 @@ footer p{color:#8f9bcc;font-size:13px;font-weight:600;margin:6px 0}
   <div class="wrap call-grid">
     <div class="rv">
       <span class="eyebrow">Esporte que une, forma e inspira</span>
-      <h2 class="sec">O Nordeste inteiro<br>em <span class="gold">uma só quadra</span></h2>
-      <p class="lead">O 1º Eusébio Cup reúne equipes de jovens atletas dos nove estados do Nordeste para três dias de jogos, troca de experiências e muita festa. Base forte se constrói jogando — e o lugar é aqui.</p>
+      <h2 class="sec">Uma estreia para<br><span class="gold">entrar para a história</span></h2>
+      <p class="lead">O Eusébio Cup nasce grande: uma competição pensada para reunir equipes de jovens atletas de todo o país, com organização, estrutura e clima de festa. Quem joga a primeira edição escreve o primeiro capítulo, e o próximo campeão pode sair da sua equipe.</p>
       <div class="stats">
+        <div class="stat"><b>1ª</b><span>edição: seja um dos primeiros a jogar</span></div>
         <div class="stat"><b>3</b><span>dias de competição</span></div>
         <div class="stat"><b>6</b><span>categorias, do Pré-mirim ao Júnior</span></div>
         <div class="stat"><b>12</b><span>disputas no masculino e no feminino</span></div>
-        <div class="stat"><b>9</b><span>estados do Nordeste convidados</span></div>
       </div>
     </div>
     <div class="map rv">
@@ -531,23 +541,28 @@ footer p{color:#8f9bcc;font-size:13px;font-weight:600;margin:6px 0}
     <div class="rv">
       <span class="eyebrow">Valores e prazos</span>
       <h2 class="sec">Garanta o <span class="gold">melhor preço</span></h2>
-      <p class="lead">O valor é cobrado por atleta inscrito. Quanto antes a equipe se inscrever, menos paga.</p>
+      <p class="lead">O valor é cobrado por atleta, em cada categoria. Quanto antes a equipe se inscrever, menos paga.</p>
     </div>
     <div class="lote-grid">
       <div class="lote rv" id="lote1">
         <span class="badge" id="b1">Lote atual</span>
         <div class="lt">1º lote</div>
         <div class="val"><sup>R$</sup>65,00</div>
-        <div class="per">por atleta</div>
+        <div class="per">por atleta, por categoria</div>
         <div class="until"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Inscrições até 15/12/2026</div>
       </div>
       <div class="lote rv" id="lote2">
         <span class="badge x" id="b2">Em breve</span>
         <div class="lt">2º lote</div>
         <div class="val"><sup>R$</sup>80,00</div>
-        <div class="per">por atleta</div>
+        <div class="per">por atleta, por categoria</div>
         <div class="until"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Inscrições até 07/01/2027</div>
       </div>
+    </div>
+    <div class="ex rv">
+      <div class="ex-ic">💡</div>
+      <div><b>Como funciona o valor</b><p>Cada atleta paga uma inscrição <u>por categoria</u> em que vai jogar. Se o mesmo atleta disputa o <b>Infantil</b> e o <b>Cadete</b>, são <b>2 inscrições</b>.</p>
+        <div class="ex-calc"><span>Exemplo no 1º lote:</span> 1 atleta × 2 categorias × R$ 65 = <b>R$ 130</b></div></div>
     </div>
     <div class="dates">
       <div class="date rv"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h9"/></svg></div><div><b>Inscrições até 7/jan</b><span>Último dia: 07 de janeiro de 2027</span></div></div>
@@ -609,7 +624,7 @@ footer p{color:#8f9bcc;font-size:13px;font-weight:600;margin:6px 0}
     </div>
     <div class="steps">
       <div class="st rv"><b>Dados da equipe</b><p>Preencha os dados da entidade, do responsável e escolha as categorias.</p></div>
-      <div class="st rv"><b>Pague via Pix</b><p>O valor é por atleta. A chave Pix é o CNPJ da Liga Desportiva de Eusébio.</p></div>
+      <div class="st rv"><b>Pague via Pix</b><p>O valor é por atleta, em cada categoria. A chave Pix é o CNPJ da Liga Desportiva de Eusébio.</p></div>
       <div class="st rv"><b>Envie o comprovante</b><p>O envio do comprovante Pix é obrigatório para concluir a inscrição.</p></div>
       <div class="st rv"><b>Ficha dos atletas</b><p>Cadastre os atletas e a comissão técnica de cada categoria.</p></div>
     </div>
@@ -632,10 +647,10 @@ footer p{color:#8f9bcc;font-size:13px;font-weight:600;margin:6px 0}
             <div class="f c6"><label for="estado">Estado <span class="req">*</span></label>
               <select id="estado" name="estado" required>
                 <option value="">Selecione</option>
-                <optgroup label="Nordeste"><option>AL</option><option>BA</option><option>CE</option><option>MA</option><option>PB</option><option>PE</option><option>PI</option><option>RN</option><option>SE</option></optgroup>
-                <optgroup label="Outras regiões"><option>AC</option><option>AM</option><option>AP</option><option>DF</option><option>ES</option><option>GO</option><option>MG</option><option>MS</option><option>MT</option><option>PA</option><option>PR</option><option>RJ</option><option>RO</option><option>RR</option><option>RS</option><option>SC</option><option>SP</option><option>TO</option></optgroup>
+                <option>AC</option><option>AL</option><option>AM</option><option>AP</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MG</option><option>MS</option><option>MT</option><option>PA</option><option>PB</option><option>PE</option><option>PI</option><option>PR</option><option>RJ</option><option>RN</option><option>RO</option><option>RR</option><option>RS</option><option>SC</option><option>SE</option><option>SP</option><option>TO</option>
+                <option value="Exterior">Fora do Brasil</option>
               </select><div class="msg">Selecione o estado.</div></div>
-            <div class="f c6"><label for="cidade">Cidade <span class="req">*</span></label><input id="cidade" name="cidade" required placeholder="Cidade da entidade"><div class="msg">Informe a cidade.</div></div>
+            <div class="f c6"><label for="cidade">Cidade <span class="req">*</span></label><input id="cidade" name="cidade" required placeholder="Cidade (e país, se fora do Brasil)"><div class="msg">Informe a cidade.</div></div>
           </div>
         </fieldset>
 
@@ -677,13 +692,13 @@ footer p{color:#8f9bcc;font-size:13px;font-weight:600;margin:6px 0}
         <fieldset class="fs" id="pagamento">
           <legend>Pagamento da inscrição</legend>
           <div class="grid" style="margin-bottom:16px">
-            <div class="f c6"><label for="atletas">Quantidade de atletas inscritos <span class="req">*</span></label><input id="atletas" name="atletas" type="number" min="1" max="400" required inputmode="numeric" placeholder="Total de atletas de todas as categorias"><div class="msg">Informe quantos atletas serão inscritos.</div><div class="hint">O valor é cobrado por cada atleta inscrito, somando todas as categorias.</div></div>
+            <div class="f c6"><label for="atletas">Total de inscrições (atletas × categorias) <span class="req">*</span></label><input id="atletas" name="atletas" type="number" min="1" max="400" required inputmode="numeric" placeholder="Soma dos atletas de cada categoria"><div class="msg">Informe o total de inscrições.</div><div class="hint">Some os atletas de cada categoria. O atleta que joga em 2 categorias conta 2 vezes. Ex.: 12 no Infantil + 14 no Cadete, com 3 atletas nos dois = 26 inscrições.</div></div>
           </div>
           <div class="pay">
             <div class="sum">
               <div class="row"><span>Lote</span><span id="sLote">1º lote</span></div>
-              <div class="row"><span>Valor por atleta</span><span id="sUnit">R$ 65,00</span></div>
-              <div class="row"><span>Atletas</span><span id="sQtd">0</span></div>
+              <div class="row"><span>Valor por atleta/categoria</span><span id="sUnit">R$ 65,00</span></div>
+              <div class="row"><span>Inscrições</span><span id="sQtd">0</span></div>
               <div class="tot"><span>Total a pagar</span><b id="sTot">R$ 0,00</b></div>
             </div>
             <div class="pix">
@@ -781,7 +796,8 @@ footer p{color:#8f9bcc;font-size:13px;font-weight:600;margin:6px 0}
   <div class="wrap">
     <div class="rv"><span class="eyebrow">Dúvidas frequentes</span><h2 class="sec">Ficou alguma <span class="gold">dúvida?</span></h2></div>
     <div class="faq-list">
-      <details class="rv"><summary>Quanto custa a inscrição?</summary><p>O valor é por atleta inscrito: R$ 65,00 no 1º lote (até 15/12/2026) e R$ 80,00 no 2º lote (até 07/01/2027).</p></details>
+      <details class="rv"><summary>Quanto custa a inscrição?</summary><p>O valor é por atleta, em cada categoria: R$ 65,00 no 1º lote (até 15/12/2026) e R$ 80,00 no 2º lote (até 07/01/2027).</p></details>
+      <details class="rv"><summary>Atleta que joga em duas categorias paga duas vezes?</summary><p>Sim. A inscrição é por atleta em cada categoria. Se o atleta disputa o Infantil e o Cadete, por exemplo, conta como 2 inscrições (no 1º lote, 2 × R$ 65 = R$ 130).</p></details>
       <details class="rv"><summary>Como faço o pagamento?</summary><p>Por Pix. A chave é o CNPJ 01.431.459/0001-02, da Liga Desportiva de Eusébio (Ag. 3589-0 · Cc. 73860-3). Depois anexe o comprovante no formulário — o envio é obrigatório.</p></details>
       <details class="rv"><summary>Até quando posso me inscrever?</summary><p>As inscrições vão até 07 de janeiro de 2027. O congresso técnico acontece no dia 08 de janeiro, às 19h, pelo Google Meet.</p></details>
       <details class="rv"><summary>Posso inscrever mais de uma categoria?</summary><p>Sim. Marque todas as categorias da sua entidade na inscrição. Depois você preenche uma ficha de atletas para cada categoria (até 16 atletas por ficha).</p></details>
@@ -871,7 +887,7 @@ function tick() {
   const p = n => String(n).padStart(2, '0');
   $('#cdD').textContent = p(d); $('#cdH').textContent = p(h); $('#cdM').textContent = p(m); $('#cdS').textContent = p(s);
   $('#lcTag').textContent = L.nome;
-  $('#lcPrice').innerHTML = `${brl(L.valor).replace(',00', '')}<small>por atleta</small>`;
+  $('#lcPrice').innerHTML = `${brl(L.valor).replace(',00', '')}<small>por atleta/categoria</small>`;
   $('#lcTxt').textContent = L.i === 0 ? `para o fim do 1º lote (${L.fimTxt})` : `para o fim das inscrições (${L.fimTxt})`;
   [1, 2].forEach(n => {
     const el = $('#lote' + n), b = $('#b' + n);
@@ -894,7 +910,9 @@ $('#catChecks').innerHTML = CATS.flatMap(c => NAIPES.map(([k, , ab]) => `
 const catLabel = code => { const c = CATS.find(x => x.id === code.slice(0, 2)); const n = NAIPES.find(x => x[0] === code[2]); return `${c.nome} ${n[1]}`; };
 
 /* ================= máscaras e CEP ================= */
+const EXTERIOR = () => $('#estado').value === 'Exterior';
 function mask(el) {
+  if (EXTERIOR() && el.closest('#s1')) return;   // equipes de fora do Brasil: CEP e telefone livres
   const t = el.dataset.mask, d = el.value.replace(/\D/g, '');
   if (t === 'cep') el.value = d.slice(0, 8).replace(/^(\d{5})(\d)/, '$1-$2');
   if (t === 'tel') {
@@ -962,10 +980,12 @@ function setComprovante(f) {
 function setBad(el, bad) { const f = el.closest('.f'); if (f) f.classList.toggle('bad', bad); return !bad; }
 function checkField(el) {
   const v = el.value.trim();
+  if (el.dataset.mask === 'cep' && EXTERIOR() && el.closest('#s1')) return setBad(el, false);   // CEP opcional fora do Brasil
   if (el.required && !v) return setBad(el, true);
   if (el.type === 'email' && v && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) return setBad(el, true);
+  const ext = EXTERIOR() && el.closest('#s1');
   if (el.dataset.mask === 'cep' && v && v.replace(/\D/g, '').length !== 8) return setBad(el, true);
-  if (el.dataset.mask === 'tel' && v && v.replace(/\D/g, '').length < 10) return setBad(el, true);
+  if (el.dataset.mask === 'tel' && v && v.replace(/\D/g, '').length < (ext ? 8 : 10)) return setBad(el, true);
   if (el.type === 'number' && el.required && !(parseInt(v, 10) >= (+el.min || 0))) return setBad(el, true);
   return setBad(el, false);
 }
@@ -1223,14 +1243,14 @@ function finish(totalAtl, teste) {
     `Entidade: ${EQUIPE.entidade} (${EQUIPE.cidade}/${EQUIPE.estado})`,
     `Responsável: ${EQUIPE.responsavel} · ${EQUIPE.celular}`,
     `Categorias: ${EQUIPE.categorias.join(', ')}`,
-    `Atletas pagos: ${EQUIPE.atletas} · ${EQUIPE.lote} · Total ${EQUIPE.valorTotal}`,
-    `Atletas cadastrados nas fichas: ${totalAtl}`,
+    `Inscrições pagas (atleta × categoria): ${EQUIPE.atletas} · ${EQUIPE.lote} · Total ${EQUIPE.valorTotal}`,
+    `Inscrições cadastradas nas fichas: ${totalAtl}`,
   ].join('\n');
   $('#waDone').href = waLink(resumo + (teste ? '\n\nSegue o comprovante do Pix em anexo.' : ''));
   $('#doneTxt').textContent = teste
     ? 'Envie agora o resumo e o comprovante do Pix pelo WhatsApp da organização para validar a sua inscrição.'
     : 'Guarde o número do protocolo. A organização vai conferir o comprovante e entrar em contato pelo WhatsApp informado.';
-  if (totalAtl > EQUIPE.atletas) $('#doneTxt').textContent += ` Atenção: você cadastrou ${totalAtl} atletas, mas pagou por ${EQUIPE.atletas}. Complete o pagamento da diferença.`;
+  if (totalAtl > EQUIPE.atletas) $('#doneTxt').textContent += ` Atenção: as fichas somam ${totalAtl} inscrições (atleta × categoria), mas o pagamento foi de ${EQUIPE.atletas}. Complete o pagamento da diferença.`;
   store.del('ec27_equipe'); store.del('ec27_fichas');
   goStep(3);
 }
