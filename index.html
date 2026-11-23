@@ -313,8 +313,11 @@ document.addEventListener('error', e => { if (e.target.tagName === 'IMG') e.targ
             </div>
             <div class="msg" id="compMsg">Anexe o comprovante do Pix para continuar.</div>
           </div>
-          <div class="ck" style="margin-top:14px" id="termField">
-            <input type="checkbox" id="termos" required><label for="termos">Declaro que as informações são verdadeiras e que o pagamento foi feito para a Liga Desportiva de Eusébio.</label>
+          <div class="ck long" style="margin-top:14px" id="termField">
+            <input type="checkbox" id="termos" required><label for="termos"><span><b>Declaração:</b> declaro que as informações são verdadeiras e que o pagamento foi feito para a Liga Desportiva de Eusébio.</span></label>
+          </div>
+          <div class="ck long" style="margin-top:10px" id="imgField">
+            <input type="checkbox" id="imagem" required><label for="imagem"><span><b>Autorização de uso de imagem:</b> como responsável pela inscrição, autorizo o uso da imagem (fotos, vídeos e voz) dos atletas, técnicos e dirigentes desta equipe, <b>inclusive dos atletas menores de idade</b>, para divulgação do 1º Eusébio Cup na imprensa, na mídia e nas redes sociais, sem custo e sem fins comerciais. Declaro que tenho a autorização dos pais ou responsáveis legais dos atletas menores de 18 anos. <a href="regulamento.html#imagem" target="_blank" rel="noopener">Ver no regulamento</a></span></label>
           </div>
         </fieldset>
 
@@ -339,8 +342,11 @@ document.addEventListener('error', e => { if (e.target.tagName === 'IMG') e.targ
             <div class="f c6"><label for="fTel">Telefone para contato <span class="req">*</span></label><input id="fTel" required inputmode="tel" data-mask="tel" placeholder="(00) 00000-0000"><div class="msg">Informe um telefone válido com DDD.</div></div>
             <div class="f c6"><label for="fEmail">E-mail <span class="req">*</span></label><input id="fEmail" type="email" required placeholder="email@exemplo.com"><div class="msg">Informe um e-mail válido.</div></div>
           </div>
-          <div class="ck" style="margin-top:14px" id="declField">
-            <input type="checkbox" id="declaracao" required><label for="declaracao">Atesto que os atletas acima foram examinados por médico e estão aptos para participar da competição. A ficha com assinatura do médico (CRM) e do responsável será entregue até o congresso técnico.</label>
+          <div class="ck long" style="margin-top:14px" id="declField">
+            <input type="checkbox" id="declaracao" required><label for="declaracao"><span><b>Aptidão médica:</b> atesto que os atletas acima foram examinados por médico e estão aptos para participar da competição. A ficha com assinatura do médico (CRM) e do responsável será entregue até o congresso técnico.</span></label>
+          </div>
+          <div class="ck long" style="margin-top:10px" id="img2Field">
+            <input type="checkbox" id="imagem2" required><label for="imagem2"><span><b>Autorização de uso de imagem:</b> autorizo o uso da imagem (fotos, vídeos e voz) dos atletas e dirigentes listados nestas fichas, <b>inclusive dos atletas menores de idade</b>, para divulgação do 1º Eusébio Cup na imprensa, na mídia e nas redes sociais, sem custo e sem fins comerciais, e declaro ter a autorização dos pais ou responsáveis legais dos atletas menores de 18 anos. <a href="regulamento.html#imagem" target="_blank" rel="noopener">Ver no regulamento</a></span></label>
           </div>
           <div class="alert info"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><div>Use o botão <b>Imprimir ficha</b> de cada categoria para gerar a ficha oficial já preenchida, colher as assinaturas e, se já tiver, anexar a ficha assinada aqui.</div></div>
         </fieldset>
@@ -648,6 +654,8 @@ S1.addEventListener('submit', async e => {
   if (!comprovante) { $('#compField').classList.add('bad'); $('#compMsg').textContent = 'Anexe o comprovante do Pix para continuar.'; errs.push($('#compField')); }
   const term = $('#termos').checked; $('#termField label').style.borderColor = term ? '' : 'var(--err)';
   if (!term) errs.push($('#termField'));
+  const img = $('#imagem').checked; $('#imgField label').style.borderColor = img ? '' : 'var(--err)';
+  if (!img) errs.push($('#imgField'));
   const box = $('#s1err');
   if (errs.length) {
     box.hidden = false;
@@ -667,6 +675,7 @@ S1.addEventListener('submit', async e => {
     atletas: q, lote: L.nome, valorAtleta: brl(L.valor), valorTotal: brl(tot),
     hospMasc: v('hospMasc') || '0', dirigMasc: v('dirigMasc') || '0', hospFem: v('hospFem') || '0', dirigFem: v('dirigFem') || '0',
     hospTotal: v('hospTotal') || '0', tipoHospedagem: v('tipoHospedagem') || 'Não precisa', chegada: v('chegada'), observacoes: v('observacoes'),
+    autorizacaoImagem: 'Sim, inclusive menores (declara ter autorização dos pais/responsáveis)',
   };
   const btn = $('#s1btn'); busy(btn, true, 'Enviando inscrição…');
   try {
@@ -797,6 +806,7 @@ function imprimir(c) {
   <table><tr><th class="n">Nº</th><th>Dirigentes</th><th style="width:160px">Nº do CREF</th></tr>
   ${F.dirigentes.map((d, j) => `<tr><td class="n">${String(j + 1).padStart(2, '0')}</td><td><b>${esc(d.funcao)}:</b> ${esc(d.nome)}</td><td>${esc(d.cref)}</td></tr>`).join('')}</table>
   <p>Atesto que os atletas acima foram por mim examinados e estão aptos para participarem da competição.</p>
+  <p style="font-size:12px"><b>Autorização de uso de imagem:</b> o responsável pela equipe autoriza o uso da imagem (fotos, vídeos e voz) dos atletas e dirigentes acima, inclusive dos menores de idade, para divulgação do 1º Eusébio Cup na imprensa, na mídia e nas redes sociais, sem custo e sem fins comerciais, e declara ter a autorização dos pais ou responsáveis legais dos atletas menores de 18 anos.</p>
   <div class="sig"><div>Ass. do Médico e C.R.M.</div><div>Ass. do Responsável pela equipe</div></div>
   <p style="margin-top:24px"><b>Telefone para contato:</b> ${esc($('#fTel').value)} &nbsp;&nbsp; <b>E-mail:</b> ${esc($('#fEmail').value)}</p>
   <script>window.onload=()=>setTimeout(()=>window.print(),300)<\/script></body></html>`);
@@ -822,6 +832,8 @@ $('#s2').addEventListener('submit', async e => {
   ['fTel', 'fEmail'].forEach(id => { if (!checkField($('#' + id))) probs.push('Informe telefone e e-mail válidos'); });
   const decl = $('#declaracao').checked; $('#declField label').style.borderColor = decl ? '' : 'var(--err)';
   if (!decl) probs.push('Marque a declaração de aptidão dos atletas');
+  const img2 = $('#imagem2').checked; $('#img2Field label').style.borderColor = img2 ? '' : 'var(--err)';
+  if (!img2) probs.push('Marque a autorização de uso de imagem');
   if (probs.length) {
     const uniq = [...new Set(probs)];
     box.hidden = false; box.innerHTML = `<div><b>Antes de enviar, confira:</b><br>${uniq.slice(0, 6).map(esc).join('<br>')}${uniq.length > 6 ? '<br>…' : ''}</div>`;
@@ -838,7 +850,7 @@ $('#s2').addEventListener('submit', async e => {
       const F = FICHAS[c];
       fichas.push({ categoria: catLabel(c), atletas: F.atletas.filter(filled).map(a => ({ ...a, nascimento: a.nascimento.split('-').reverse().join('/') })), dirigentes: F.dirigentes, arquivo: F.arquivo ? await fileToB64(F.arquivo) : null });
     }
-    const r = await enviar({ tipo: 'atletas', protocolo: EQUIPE.protocolo, entidade: EQUIPE.entidade, telefone: $('#fTel').value, email: $('#fEmail').value, declaracao: true, fichas });
+    const r = await enviar({ tipo: 'atletas', protocolo: EQUIPE.protocolo, entidade: EQUIPE.entidade, telefone: $('#fTel').value, email: $('#fEmail').value, declaracao: true, autorizacaoImagem: true, fichas });
     finish(totalAtl, !!r.teste || EQUIPE.teste);
   } catch (err) {
     box.hidden = false; box.innerHTML = `<div>Não foi possível enviar agora (${esc(err.message)}). Seus dados estão salvos neste aparelho; tente novamente em instantes.</div>`;
@@ -866,7 +878,7 @@ function finish(totalAtl, teste) {
 }
 $('#newInsc').addEventListener('click', () => {
   S1.reset(); comprovante = null; drop.classList.remove('has'); $('#dropT').textContent = 'Anexar comprovante'; $('#dropS').textContent = 'Toque para escolher ou arraste o arquivo · imagem ou PDF até 5 MB';
-  $('#declaracao').checked = false; EQUIPE = null; total(); hosp(); goStep(1);
+  $('#declaracao').checked = false; $('#imagem2').checked = false; EQUIPE = null; total(); hosp(); goStep(1);
 });
 
 /* retomar inscrição em andamento */
