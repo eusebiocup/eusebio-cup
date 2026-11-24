@@ -163,7 +163,7 @@ section{position:relative}
 .icons div{text-align:center;padding:18px 10px;border-radius:var(--r);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
 .icons .em{width:76px;height:76px;margin:0 auto 10px;border-radius:50%;display:grid;place-items:center;font-size:36px;background:rgba(255,255,255,.1);border:4px solid var(--gold)}
 .icons b{font:italic 900 16px var(--F);text-transform:uppercase}
-.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px;margin-top:34px}
 .ph{position:relative;border-radius:22px;overflow:hidden;border:3px solid var(--gold);background:#0a1a55}
 .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
 .ph:hover img{transform:scale(1.06)}
@@ -198,6 +198,25 @@ section{position:relative}
 .wc b em{font-style:inherit;color:var(--gold)}
 .wc span{display:block;margin-top:6px;font-size:13px;color:#c9d3f5;font-weight:600}
 @media (max-width:760px){.why-grid{grid-template-columns:1fr}}
+
+/* ---------- PATROCINADOR · JORDANTUR ---------- */
+.trip{background:var(--deep)}
+.trip-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(28px,5vw,64px);align-items:center}
+.trip-logo{margin:26px 0 18px;background:#fff;border-radius:22px;padding:18px 26px;display:flex;justify-content:center;max-width:420px}
+.trip-logo img{width:100%;max-width:330px;height:auto}
+.trip-ctt{display:flex;flex-direction:column;align-items:flex-start;gap:4px;max-width:420px}
+.trip-ctt span{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#c9d3f5}
+.trip-ctt b{font:italic 900 clamp(20px,2.4vw,26px) var(--F);text-transform:uppercase}
+.trip-ctt .btn{margin-top:12px;font-size:20px}
+.trip-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.trip-list li{display:flex;align-items:center;gap:18px;padding:16px 20px;border-radius:var(--r);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.trip-list i{flex:none;width:58px;height:58px;border-radius:14px;border:3px solid var(--gold);color:var(--gold);display:grid;place-items:center}
+.trip-list i svg{width:30px;height:30px}
+.trip-list b{display:block;font:italic 900 clamp(17px,2vw,21px)/1.1 var(--F);text-transform:uppercase}
+.trip-list span{display:block;margin-top:4px;font-size:13.5px;color:#c9d3f5;font-weight:600}
+.alert.info a{color:inherit;font-weight:800;white-space:nowrap}
+@media (max-width:860px){.trip-grid{grid-template-columns:1fr}.trip-logo{max-width:none}.trip-ctt{max-width:none}}
+@media (max-width:520px){.trip-logo{padding:14px 18px}.trip-list li{padding:14px}.trip-list i{width:50px;height:50px}}
 
 /* como funciona */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px;counter-reset:s}
