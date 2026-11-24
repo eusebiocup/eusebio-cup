@@ -119,8 +119,9 @@ document.addEventListener('error', e => { if (e.target.tagName === 'IMG') e.targ
       <div class="hl-card rv"><div class="hl-ic">⭐</div><b>Melhor jogador</b><span>Placa de destaque</span></div>
       <div class="hl-card rv"><div class="hl-ic">🧤</div><b>Melhor goleiro</b><span>Placa de destaque</span></div>
       <div class="hl-card rv"><div class="hl-ic">📋</div><b>Melhor técnico</b><span>Placa de destaque</span></div>
-      <div class="hl-card rv"><div class="hl-ic">🏅</div><b>MVP</b><span>Certificado</span></div>
+      <div class="hl-card rv"><div class="hl-ic">🏅</div><b>MVP</b><span>Certificado + foto profissional</span></div>
     </div>
+    <div class="gifts rv"><span>📸</span><p><b>Bônus do MVP:</b> além do certificado, o MVP ganha <b>1 foto do nosso fotógrafo profissional</b>, escolhida por ele mesmo entre as fotos do evento.</p></div>
     <div class="gifts rv"><span>🎁</span><p><b>E tem mais:</b> brindes oferecidos e sorteados pelos patrocinadores durante o evento.</p></div>
   </div>
 </section>
@@ -317,7 +318,7 @@ document.addEventListener('error', e => { if (e.target.tagName === 'IMG') e.targ
             <input type="checkbox" id="termos" required><label for="termos"><span><b>Declaração:</b> declaro que as informações são verdadeiras e que o pagamento foi feito para a Liga Desportiva de Eusébio.</span></label>
           </div>
           <div class="ck long" style="margin-top:10px" id="imgField">
-            <input type="checkbox" id="imagem" required><label for="imagem"><span><b>Autorização de uso de imagem:</b> como responsável pela inscrição, autorizo o uso da imagem (fotos, vídeos e voz) dos atletas, técnicos e dirigentes desta equipe, <b>inclusive dos atletas menores de idade</b>, para divulgação do 1º Eusébio Cup na imprensa, na mídia e nas redes sociais, sem custo e sem fins comerciais. Declaro que tenho a autorização dos pais ou responsáveis legais dos atletas menores de 18 anos. <a href="regulamento.html#imagem" target="_blank" rel="noopener">Ver no regulamento</a></span></label>
+            <input type="checkbox" id="imagem" required><label for="imagem"><span><b>Autorização de uso de imagem:</b> como responsável pela inscrição, autorizo o uso da imagem (fotos, vídeos e voz) dos atletas, técnicos e dirigentes desta equipe, <b>inclusive dos atletas menores de idade</b>, para divulgação do 1º Eusébio Cup na imprensa, na mídia e nas redes sociais, sem custo e sem fins comerciais. Declaro que tenho a autorização dos pais ou responsáveis legais dos atletas menores de 18 anos. Os dados e as imagens são tratados conforme a <b>LGPD (Lei nº 13.709/2018)</b>. <a href="regulamento.html#imagem" target="_blank" rel="noopener">Ver no regulamento</a></span></label>
           </div>
         </fieldset>
 
@@ -346,7 +347,7 @@ document.addEventListener('error', e => { if (e.target.tagName === 'IMG') e.targ
             <input type="checkbox" id="declaracao" required><label for="declaracao"><span><b>Aptidão médica:</b> atesto que os atletas acima foram examinados por médico e estão aptos para participar da competição. A ficha com assinatura do médico (CRM) e do responsável será entregue até o congresso técnico.</span></label>
           </div>
           <div class="ck long" style="margin-top:10px" id="img2Field">
-            <input type="checkbox" id="imagem2" required><label for="imagem2"><span><b>Autorização de uso de imagem:</b> autorizo o uso da imagem (fotos, vídeos e voz) dos atletas e dirigentes listados nestas fichas, <b>inclusive dos atletas menores de idade</b>, para divulgação do 1º Eusébio Cup na imprensa, na mídia e nas redes sociais, sem custo e sem fins comerciais, e declaro ter a autorização dos pais ou responsáveis legais dos atletas menores de 18 anos. <a href="regulamento.html#imagem" target="_blank" rel="noopener">Ver no regulamento</a></span></label>
+            <input type="checkbox" id="imagem2" required><label for="imagem2"><span><b>Autorização de uso de imagem:</b> autorizo o uso da imagem (fotos, vídeos e voz) dos atletas e dirigentes listados nestas fichas, <b>inclusive dos atletas menores de idade</b>, para divulgação do 1º Eusébio Cup na imprensa, na mídia e nas redes sociais, sem custo e sem fins comerciais, e declaro ter a autorização dos pais ou responsáveis legais dos atletas menores de 18 anos. Os dados e as imagens são tratados conforme a <b>LGPD (Lei nº 13.709/2018)</b>. <a href="regulamento.html#imagem" target="_blank" rel="noopener">Ver no regulamento</a></span></label>
           </div>
           <div class="alert info"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><div>Use o botão <b>Imprimir ficha</b> de cada categoria para gerar a ficha oficial já preenchida, colher as assinaturas e, se já tiver, anexar a ficha assinada aqui.</div></div>
         </fieldset>
@@ -435,9 +436,15 @@ document.addEventListener('error', e => { if (e.target.tagName === 'IMG') e.targ
       </div>
     </div>
     <p class="ft-label">Realização e apoio</p>
-    <img class="apoio" src="assets/apoio.png" alt="Prefeitura de Eusébio, Secretaria de Esporte e Juventude, Liga Desportiva de Eusébio, IEL Brasil e Sport Club Eusébio">
+    <ul class="sponsors" aria-label="Realização e apoio">
+      <li class="w"><img src="assets/logos/prefeitura.svg" alt="Prefeitura Municipal do Eusébio" loading="lazy"></li>
+      <li class="r"><img src="assets/logos/liga.svg" alt="Liga Desportiva de Eusébio" loading="lazy"></li>
+      <li class="r"><img src="assets/logos/sport.svg" alt="Sport Club Eusébio" loading="lazy"></li>
+      <li class="s"><img src="assets/logos/iel.svg" alt="IEL Brasil" loading="lazy"></li>
+      <li class="w"><img src="assets/logos/jordantur.svg" alt="Jordantur 30 anos" loading="lazy"></li>
+    </ul>
     <p>Com o apoio da Secretaria de Esporte e Juventude (SEJUV) de Eusébio</p>
-    <p class="credits">Créditos das imagens: algumas fotos e vídeos desta página foram retirados do Instagram de profissionais da região e ainda não são do evento. Todos os direitos pertencem aos seus autores.</p>
+    <p class="credits">Créditos das imagens: algumas fotos e vídeos desta página foram retirados do Instagram de fotógrafos profissionais de várias partes do Brasil e ainda não são do evento. Todos os direitos pertencem aos seus autores.</p>
     <p class="copy">© 2026 · 1º Eusébio Cup de Handebol · Eusébio – Ceará</p>
   </div>
 </footer>
@@ -806,7 +813,7 @@ function imprimir(c) {
   <table><tr><th class="n">Nº</th><th>Dirigentes</th><th style="width:160px">Nº do CREF</th></tr>
   ${F.dirigentes.map((d, j) => `<tr><td class="n">${String(j + 1).padStart(2, '0')}</td><td><b>${esc(d.funcao)}:</b> ${esc(d.nome)}</td><td>${esc(d.cref)}</td></tr>`).join('')}</table>
   <p>Atesto que os atletas acima foram por mim examinados e estão aptos para participarem da competição.</p>
-  <p style="font-size:12px"><b>Autorização de uso de imagem:</b> o responsável pela equipe autoriza o uso da imagem (fotos, vídeos e voz) dos atletas e dirigentes acima, inclusive dos menores de idade, para divulgação do 1º Eusébio Cup na imprensa, na mídia e nas redes sociais, sem custo e sem fins comerciais, e declara ter a autorização dos pais ou responsáveis legais dos atletas menores de 18 anos.</p>
+  <p style="font-size:12px"><b>Autorização de uso de imagem:</b> o responsável pela equipe autoriza o uso da imagem (fotos, vídeos e voz) dos atletas e dirigentes acima, inclusive dos menores de idade, para divulgação do 1º Eusébio Cup na imprensa, na mídia e nas redes sociais, sem custo e sem fins comerciais, e declara ter a autorização dos pais ou responsáveis legais dos atletas menores de 18 anos. Os dados pessoais e as imagens são tratados conforme a Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018), apenas para a organização e a divulgação do evento.</p>
   <div class="sig"><div>Ass. do Médico e C.R.M.</div><div>Ass. do Responsável pela equipe</div></div>
   <p style="margin-top:24px"><b>Telefone para contato:</b> ${esc($('#fTel').value)} &nbsp;&nbsp; <b>E-mail:</b> ${esc($('#fEmail').value)}</p>
   <script>window.onload=()=>setTimeout(()=>window.print(),300)<\/script></body></html>`);
